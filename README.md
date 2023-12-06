@@ -12,7 +12,7 @@ logo here
       <img alt="Last commit" src="https://img.shields.io/github/last-commit/lpuljic/nox-modus.nvim?style=for-the-badge&logo=starship&color=98c379&logoColor=D9E0EE&labelColor=302D41"/>
     </a>
     <a href="https://github.com/lpuljic/nox-modus.nvim/stargazers">
-      <img alt="Stars" src="https://img.shields.io/github/stars/lpuljix/nox-modus.nvim?style=for-the-badge&logo=starship&color=c678dd&logoColor=D9E0EE&labelColor=302D41" />
+      <img alt="Stars" src="https://img.shields.io/github/stars/lpuljic/nox-modus.nvim?style=for-the-badge&logo=starship&color=c678dd&logoColor=D9E0EE&labelColor=302D41" />
     </a>
 </div>
 
