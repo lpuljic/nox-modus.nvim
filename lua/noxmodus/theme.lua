@@ -119,6 +119,8 @@ theme.set_highlights = function()
   hl(0, "GitSignsAdd", { fg = c.green, bg = 'NONE' })
   hl(0, "GitSignsChange", { fg = c.orange, bg = 'NONE' })
   hl(0, "GitSignsDelete", { fg = c.red, bg = 'NONE' })
+  hl(0, "gitCommitSummary", { fg = c.fg, bg = c.bg, italic=true, })
+  hl(0, "gitCommitSelectedFile", { fg = c.light_blue, bg = c.bg, italic=true, })
 
   -- Packer
   hl(0, "packerString", { fg = c.orange, bg = 'NONE' })
