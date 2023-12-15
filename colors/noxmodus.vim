@@ -1,4 +1,4 @@
 lua << EOF
-local noxmodus = require("noxmodus")
-noxmodus.setup({})
+local nox-modus = require("nox-modus")
+nox-modus.setup({})
 EOF

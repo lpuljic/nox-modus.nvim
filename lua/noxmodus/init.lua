@@ -1,5 +1,5 @@
 local M = {}
-local theme = require('noxmodus.theme')
+local theme = require('nox-modus.theme')
 
 M.setup = function()
   vim.cmd('hi clear')
@@ -10,7 +10,7 @@ M.setup = function()
   end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = 'noxmodus'
+  vim.g.colors_name = 'nox-modus'
 
   theme.set_highlights()
 

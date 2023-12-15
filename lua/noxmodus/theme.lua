@@ -1,5 +1,5 @@
 
-local c = require('noxmodus.palette')
+local c = require('nox-modus.palette')
 
 local hl = vim.api.nvim_set_hl
 local theme = {}

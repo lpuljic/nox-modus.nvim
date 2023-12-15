@@ -34,7 +34,7 @@ use "lanox/nox-modus.nvim"
 ## Activate
 
 ```lua
-vim.cmd("colorscheme noxmodus")
+vim.cmd("colorscheme nox-modus")
 ```
 
 
