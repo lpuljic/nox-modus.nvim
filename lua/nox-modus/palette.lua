@@ -26,3 +26,4 @@ local colors = {
 }
 
 return colors
+
