@@ -243,6 +243,13 @@ theme.set_highlights = function()
   hl(0, "DiagnosticHint", { fg = c.purple, bg = 'NONE' })
   hl(0, "DiagnosticSignHint", { link = 'DiagnosticHint' })
   hl(0, "DiagnosticUnderlineHint", { fg = 'NONE', bg = 'NONE', sp = c.purple, undercurl=true, })
+
+  -- Fugitive
+  hl(0, "fugitiveUnstagedModifier", { fg = c.yellow, bg = 'NONE' })
+  hl(0, "fugitiveUnstagedHeading",  { fg = c.yellow, bg = 'NONE' })
+  hl(0, "fugitiveStagedModifier",   { fg = c.green, bg = 'NONE' })
+  hl(0, "fugitiveStagedHeading",    { fg = c.green, bg = 'NONE' })
+  hl(0, "fugitiveCount",            { fg = c.light_blue, bg = 'NONE' })
 end
 
 return theme
