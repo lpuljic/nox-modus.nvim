@@ -3,6 +3,20 @@ local c = require("nox-modus.palette")
 local hl = vim.api.nvim_set_hl
 local theme = {}
 
+--Style Options:
+--
+--    o: standout
+--    u: underline
+--    c: undercurl
+--    d: underdouble
+--    t: underdotted
+--    h: underdashed
+--    s: strikethrough
+--    i: italic
+--    b: bold
+--    r: reverse
+--    n: nocombine
+
 theme.set_highlights = function()
 	-- editor
 	hl(0, "Normal", { fg = c.fg, bg = c.bg })
@@ -145,6 +159,8 @@ theme.set_highlights = function()
 	hl(0, "NvimTreeGitDirty", { fg = c.yellow[7], bg = "NONE" })
 	hl(0, "NvimTreeSymlink", { fg = c.blue[0], bg = "NONE" })
 	hl(0, "NvimTreeFolderIcon", { fg = c.blue[8], bg = "NONE" })
+	hl(0, "NvimTreeOpenedFolderName", { fg = c.orange[3], bg = "NONE", italic = true })
+	hl(0, "NvimTreeOpenedFolderIcon", { fg = c.orange[3], bg = "NONE", italic = true })
 	hl(0, "NvimTreeOpenedFolderName", { fg = "NONE", bg = "NONE", italic = true })
 	hl(0, "NvimTreeGitIgnored", { fg = "NONE", bg = "NONE", italic = true })
 	hl(0, "NvimTreeEmptyFolderName", { fg = "NONE", bg = "NONE", italic = true })
