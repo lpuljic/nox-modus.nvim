@@ -259,6 +259,14 @@ theme.set_highlights = function()
 	hl(0, "DiagnosticHint", { fg = c.purple[6], bg = "NONE" })
 	hl(0, "DiagnosticSignHint", { link = "DiagnosticHint" })
 	hl(0, "DiagnosticUnderlineHint", { fg = "NONE", bg = "NONE", sp = c.purple[6], undercurl = true })
+	hl(0, "LspReferenceRead", { fg = "NONE", bg = c.gray[5] })
+	hl(0, "LspReferenceText", { fg = "NONE", bg = c.gray[5] })
+	hl(0, "LspReferenceWrite", { fg = "NONE", bg = c.gray[5] })
+
+	-- Illuminate
+	hl(0, "IlluminatedWordText", { link = "LspReferenceText" })
+	hl(0, "IlluminatedWordRead", { link = "LspReferenceRead" })
+	hl(0, "IlluminatedWordWrite", { link = "LspReferenceWrite" })
 
 	-- Fugitive
 	hl(0, "fugitiveUnstagedModifier", { fg = c.yellow[7], bg = "NONE" })
