@@ -29,11 +29,17 @@ local colors = {
 	  [0] = 0x341a00, [1] = 0x4b2900, [2] = 0x693e00, [3] = 0x845306, [4] = 0x9e6a03,
 	  [5] = 0xbb8009, [6] = 0xd29922, [7] = 0xFAC03B, [8] = 0xf2cc60, [9] = 0xf8e3a1
   },
+  git = {
 	DiffAdd = "#294841",
 	DiffDelete = "#6A2835",
 	DiffChange = "#49423C",
 	DiffText = "#9A6F43",
-  }
+  },
+  gitSigns ={
+	add = "#238636",
+	change = "#e67300",
+	delete = "#da3633",
+  },
+}
   
-  return colors
-  
+return colors
