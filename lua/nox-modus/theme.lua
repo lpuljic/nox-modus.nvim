@@ -29,7 +29,7 @@ theme.set_highlights = function()
 	hl(0, "MsgArea", { fg = c.fg, bg = c.bg }) -- Area for messages and cmdline
 	hl(0, "VertSplit", { fg = c.gray[1], bg = "NONE" }) -- the column separating vertically split windows
 	hl(0, "LineNr", { fg = c.gray[1], bg = "NONE" }) -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-	hl(0, "CursorLineNr", { fg = c.yellow[7], bg = c.bg })  -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+	hl(0, "CursorLineNr", { fg = c.yellow[7], bg = c.bg }) -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 	hl(0, "CursorLine", { fg = "NONE", bg = c.gray[1] }) -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
 	hl(0, "SignColumn", { fg = "NONE", bg = c.bg }) -- column where |signs| are displayed
 	hl(0, "ColorColumn", { fg = "NONE", bg = c.gray[6] }) -- used for the columns set with 'colorcolumn'
@@ -41,7 +41,7 @@ theme.set_highlights = function()
 	hl(0, "ErrorMsg", { fg = c.red[4], bg = c.bg, bold = true }) -- error messages on the command line
 	hl(0, "WarningMsg", { fg = c.orange[6], bg = c.bg }) -- warning messages
 	hl(0, "ModeMsg", { fg = c.fg, bg = c.bg })
-	hl(0, "MoreMsg", { fg = c.blue[7], bg = "NONE" })  -- |more-prompt|
+	hl(0, "MoreMsg", { fg = c.blue[7], bg = "NONE" }) -- |more-prompt|
 	hl(0, "Error", { fg = c.red[4], bg = "NONE", bold = true }) -- (preferred) any erroneous construct
 	hl(0, "Visual", { fg = c.gray[1], bg = c.gray[3] }) -- Visual mode selection
 	hl(0, "VisualNOS", { fg = "NONE", bg = c.red[4] }) -- Visual mode selection when vim is "Not Owning the Selection".
@@ -59,7 +59,7 @@ theme.set_highlights = function()
 	hl(0, "Folded", { fg = c.gray[2], bg = "NONE" }) -- line used for closed folds
 	hl(0, "FoldColumn", { fg = c.gray[6], bg = "NONE" }) -- 'foldcolumn'
 	hl(0, "Whitespace", { fg = c.fg, bg = "NONE" }) -- "nbsp", "space", "tab" and "trail" in 'listchars'
-	hl(0, "NormalFloat", { fg = "NONE", bg = "NONE" })  -- Normal text in floating windows.
+	hl(0, "NormalFloat", { fg = "NONE", bg = "NONE" }) -- Normal text in floating windows.
 	hl(0, "FloatBorder", { fg = c.gray[3], bg = c.bg })
 	hl(0, "QuickFixLine", { fg = "NONE", bg = c.gray[1] }) -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
 	hl(0, "qfFileName", { fg = c.fg, bg = "NONE" })
@@ -81,7 +81,7 @@ theme.set_highlights = function()
 	-- Code
 	hl(0, "Comment", { fg = c.gray[2], bg = "NONE", italic = true }) -- any comment
 	hl(0, "Title", { fg = c.gray[5], bg = "NONE", bold = true }) -- titles for output from ":set all", ":autocmd" etc.
-	hl(0, "String", { fg = c.blue[9], bg = "NONE" })  --   a string constant: "this is a string"
+	hl(0, "String", { fg = c.blue[9], bg = "NONE" }) --   a string constant: "this is a string"
 	hl(0, "Character", { fg = c.gray[3], bg = "NONE" }) --  a character constant: 'c', '\n'
 	hl(0, "Number", { fg = c.gray[4], bg = "NONE" }) --   a number constant: 234, 0xff
 	hl(0, "Float", { fg = c.gray[4], bg = "NONE" }) --    a floating point constant: 2.3e10
@@ -91,7 +91,7 @@ theme.set_highlights = function()
 	hl(0, "StorageClass", { fg = c.fg, bg = "NONE" }) -- static, register, volatile, etc.
 	hl(0, "Structure", { fg = c.fg, bg = "NONE" }) --  struct, union, enum, etc.
 	hl(0, "Typedef", { fg = c.fg, bg = "NONE" }) --  A typedef
-	hl(0, "PreProc", { fg = c.blue[8], bg = "NONE" })  -- (preferred) generic Preprocessor
+	hl(0, "PreProc", { fg = c.blue[8], bg = "NONE" }) -- (preferred) generic Preprocessor
 	hl(0, "Include", { fg = c.blue[8], bg = "NONE" }) --  preprocessor #include
 	hl(0, "Define", { fg = c.gray[5], bg = "NONE" }) --   preprocessor #define
 	hl(0, "Macro", { fg = c.gray[5], bg = "NONE" }) --    same as Define
@@ -101,7 +101,7 @@ theme.set_highlights = function()
 	hl(0, "Repeat", { fg = c.blue[8], bg = "NONE" }) --   for, do, while, etc.
 	hl(0, "Label", { fg = c.gray[3], bg = "NONE" }) --    case, default, etc.
 	hl(0, "Operator", { fg = c.gray[3], bg = "NONE" }) -- "sizeof", "+", "*", etc.
-	hl(0, "Keyword", { fg = c.blue[8], bg = "NONE" })  --  any other keyword
+	hl(0, "Keyword", { fg = c.blue[8], bg = "NONE" }) --  any other keyword
 	hl(0, "Variable", { fg = c.fg, bg = "NONE" }) -- Any variable name that does not have another highlight.
 	hl(0, "Exception", { fg = c.gray[3], bg = "NONE" }) --  try, catch, throw
 	hl(0, "Identifier", { fg = c.fg, bg = "NONE" }) -- (preferred) any variable name
@@ -129,7 +129,7 @@ theme.set_highlights = function()
 	hl(0, "SignDelete", { fg = c.red[4], bg = "NONE" })
 	hl(0, "GitSignsAdd", { fg = c.gitSigns.add }) -- diff mode: Added line |diff.txt|
 	hl(0, "GitSignsChange", { fg = c.gitSigns.change, bg = "NONE" }) -- diff mode: Changed line |diff.txt|
-	hl(0, "GitSignsDelete", { fg = c.gitSigns.delete, bg = "NONE" })  -- diff mode: Deleted line |diff.txt|
+	hl(0, "GitSignsDelete", { fg = c.gitSigns.delete, bg = "NONE" }) -- diff mode: Deleted line |diff.txt|
 	hl(0, "gitCommitSummary", { fg = c.fg, bg = c.bg, italic = true })
 	hl(0, "gitCommitSelectedFile", { fg = c.blue[9], bg = c.bg, italic = true })
 
@@ -232,6 +232,8 @@ theme.set_highlights = function()
 
 	-- Treesitter
 	hl(0, "@comment", { link = "Comment" })
+	hl(0, "@comment.todo", { fg = c.blue[7], bold = true })
+	hl(0, "@comment.note", { fg = c.yellow[7], bold = true })
 	hl(0, "@variable", { link = "Identifier" })
 	hl(0, "@variable.builtin", { fg = c.blue[8], bg = "NONE" })
 	hl(0, "@string", { link = "String" })
@@ -257,11 +259,10 @@ theme.set_highlights = function()
 	hl(0, "DiagnosticVirtualTextInfo", { fg = c.blue[5] }) -- Used for "Information" diagnostic virtual text
 	hl(0, "DiagnosticVirtualTextHint", { fg = c.blue[6] }) -- Used for "Hint" diagnostic virtual text
 
-	hl(0, "DiagnosticUnderlineError", { sp = c.red[4], undercurl = true, }) -- Used to underline "Error" diagnostics
-	hl(0, "DiagnosticUnderlineWarn", { sp = c.yellow[7], undercurl = true, }) -- Used to underline "Warning" diagnostics
-	hl(0, "DiagnosticUnderlineInfo", { sp = c.blue[5], undercurl = true, }) -- Used to underline "Information" diagnostics
-	hl(0, "DiagnosticUnderlineHint", { sp = c.blue[6], undercurl = true, }) -- Used to underline "Hint" diagnostics
-
+	hl(0, "DiagnosticUnderlineError", { sp = c.red[4], undercurl = true }) -- Used to underline "Error" diagnostics
+	hl(0, "DiagnosticUnderlineWarn", { sp = c.yellow[7], undercurl = true }) -- Used to underline "Warning" diagnostics
+	hl(0, "DiagnosticUnderlineInfo", { sp = c.blue[5], undercurl = true }) -- Used to underline "Information" diagnostics
+	hl(0, "DiagnosticUnderlineHint", { sp = c.blue[6], undercurl = true }) -- Used to underline "Hint" diagnostics
 
 	hl(0, "LspReferenceText", { fg = "NONE", bg = c.gray[1] }) -- used for highlighting "text" references
 	hl(0, "LspReferenceRead", { fg = "NONE", bg = c.gray[1] }) -- used for highlighting "read" references
