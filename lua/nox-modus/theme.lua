@@ -30,7 +30,7 @@ theme.set_highlights = function()
 	hl(0, "VertSplit", { fg = c.gray[1], bg = "NONE" }) -- the column separating vertically split windows
 	hl(0, "LineNr", { fg = c.gray[1], bg = "NONE" }) -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 	hl(0, "CursorLineNr", { fg = c.yellow[7], bg = c.bg }) -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
-	hl(0, "CursorLine", { fg = "NONE", bg = c.gray[1] }) -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+	hl(0, "CursorLine", { fg = "NONE", bg = c.gray[8] }) -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
 	hl(0, "SignColumn", { fg = "NONE", bg = c.bg }) -- column where |signs| are displayed
 	hl(0, "ColorColumn", { fg = "NONE", bg = c.gray[6] }) -- used for the columns set with 'colorcolumn'
 	hl(0, "CursorColumn", { fg = "NONE", bg = c.gray[1] }) -- Screen-column at the cursor, when 'cursorcolumn' is set.

@@ -3,7 +3,7 @@ local colors = {
 	fg = "#e4e4e4",
 	gray = { -- 7,8,9 not used.
 	  [0] = 0xAbAbAf, [1] = 0x494949, [2] = 0x666666, [3] = 0xb6b6b5, [4] = 0x7c8c95,
-	  [5] = 0x8c8c8c, [6] = 0xa0a0a0, [7] = 0x415062, [8] = 0xc9d1d9, [9] = 0xf0f6fc
+	  [5] = 0x8c8c8c, [6] = 0xa0a0a0, [7] = 0x415062, [8] = 0x282828, [9] = 0xf0f6fc
   },
 	green = {--original colour green = "#97BC62", [green[7] only used]
 	  [0] = 0x04260f, [1] = 0x033a16, [2] = 0x0f5323, [3] = 0x196c2e, [4] = 0x238636,
@@ -41,5 +41,5 @@ local colors = {
 	delete = "#da3633",
   },
 }
-  
+
 return colors
