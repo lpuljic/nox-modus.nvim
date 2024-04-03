@@ -34,7 +34,7 @@ local colors = {
 	DiffAdd = "#294841",
 	DiffDelete = "#6A2835",
 	DiffChange = "#49423C",
-	DiffText = "#9A6F43",
+	DiffText = "#e67300",
   },
 
   gitSigns ={
