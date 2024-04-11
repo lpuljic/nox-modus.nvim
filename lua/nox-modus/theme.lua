@@ -141,11 +141,11 @@ theme.set_highlights = function()
 	hl(0, "packerSuccess", { fg = c.green[7], bg = "NONE" })
 	hl(0, "packerStatusSuccess", { fg = c.blue[0], bg = "NONE" })
 
-	-- Nvim-Cmp
-	hl(0, "CmpPmenuSel", { fg = "NONE", bg = c.gray[1] })
+	hl(0, "CmpPmenuSel", { fg = c.fg, bg = c.gray[1] })
 	hl(0, "CmpItemAbbrDeprecated", { fg = c.gray[3], bg = "NONE", strikethrough = true })
 	hl(0, "CmpItemAbbrMatch", { fg = c.fg, bg = "NONE" })
 	hl(0, "CmpItemAbbrMatchFuzzy", { fg = c.fg, bg = "NONE" })
+	hl(0, "CmpItemKind", { fg = c.blue[8], bg = "NONE" })
 
 	-- Nvim-Tree
 	hl(0, "NvimTreeGitNew", { fg = c.green[7], bg = "NONE" })
