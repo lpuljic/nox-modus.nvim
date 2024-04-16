@@ -114,7 +114,7 @@ theme.set_highlights = function()
 	hl(0, "Bold", { bold = true })
 	hl(0, "Italic", { italic = true })
 	hl(0, "Todo", { fg = c.bg, bg = c.yellow[7], bold = true }) -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-	-- hl(0, "Ignore", { fg = c.red[4], bg = "NONE", bold = true }) -- (preferred) left blank, hidden  |hl-Ignore|
+	hl(0, "Ignore", { fg = c.red[4], bg = "NONE", bold = true }) -- (preferred) left blank, hidden  |hl-Ignore|
 
 	-- StatusLine
 	hl(0, "StatusLine", { fg = c.gray[3], bg = c.gray[1] }) -- status line of current window
@@ -162,6 +162,9 @@ theme.set_highlights = function()
 	hl(0, "NvimTreeGitIgnored", { fg = "NONE", bg = "NONE", italic = true })
 	hl(0, "NvimTreeEmptyFolderName", { fg = "NONE", bg = "NONE", italic = true })
 	hl(0, "NvimTreeRootFolder", { fg = c.blue[0], bg = "NONE", italic = true })
+
+	-- Neo-Tree
+	hl(0, "NeoTreeFileNameOpened", { bg = c.gray[8] })
 
 	-- Telescope
 	hl(0, "TelescopeSelection", { fg = "NONE", bg = c.gray[1] })
@@ -216,6 +219,7 @@ theme.set_highlights = function()
 	hl(0, "@method", { link = "Function" })
 	hl(0, "@constructor", { link = "Function" })
 	hl(0, "@parameter", { link = "Identifier" })
+	hl(0, "@markup.heading.3.vimdoc", { bg = c.gray[8] })
 
 	-- LSP
 	hl(0, "DiagnosticError", { fg = c.red[4] }) -- Used as the base highlight group. Other Diagnostic highlights link to this by default
