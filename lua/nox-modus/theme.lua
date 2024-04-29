@@ -36,8 +36,8 @@ theme.set_highlights = function()
 	hl(0, "CursorColumn", { fg = "NONE", bg = c.gray[1] }) -- Screen-column at the cursor, when 'cursorcolumn' is set.
 	hl(0, "SpellBad", { sp = c.red[4], undercurl = true }) -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
 	hl(0, "SpellCap", { sp = c.yellow[7], undercurl = true }) -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
-	hl(0, "SpellLocal", { sp = c.blue[5], underline = true }) -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
-	hl(0, "SpellRare", { sp = c.blue[6], underline = true }) -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
+	hl(0, "SpellLocal", { sp = c.blue[5], undercurl = true }) -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
+	hl(0, "SpellRare", { sp = c.blue[6], undercurl = true }) -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
 	hl(0, "ErrorMsg", { fg = c.red[4], bg = c.bg, bold = true }) -- error messages on the command line
 	hl(0, "WarningMsg", { fg = c.orange[6], bg = c.bg }) -- warning messages
 	hl(0, "ModeMsg", { fg = c.fg, bg = c.bg })
@@ -204,8 +204,11 @@ theme.set_highlights = function()
 
 	-- Treesitter
 	hl(0, "@comment", { link = "Comment" })
-	hl(0, "@comment.todo", { fg = c.blue[7], bold = true })
-	hl(0, "@comment.note", { fg = c.yellow[7], bold = true })
+	hl(0, "@comment.error", { fg = c.bg, bg = c.red[6], bold = true })
+	hl(0, "@comment.warning", { fg = c.bg, bg = c.yellow[8], bold = true })
+	hl(0, "@comment.todo", { fg = c.bg, bg = c.red[9], bold = true })
+	hl(0, "@comment.hint", { fg = c.bg, bg = c.blue[6], bold = true })
+	hl(0, "@comment.note", { fg = c.bg, bg = c.blue[6], bold = true })
 	hl(0, "@variable", { link = "Identifier" })
 	hl(0, "@variable.builtin", { fg = c.blue[8], bg = "NONE" })
 	hl(0, "@string", { link = "String" })
@@ -247,11 +250,13 @@ theme.set_highlights = function()
 	hl(0, "IlluminatedWordWrite", { link = "LspReferenceWrite" })
 
 	-- Fugitive
+	hl(0, "fugitiveHeading", { fg = c.blue[8] })
+	hl(0, "fugitiveCount", { fg = c.yellow[7] })
+	hl(0, "fugitiveHash", { link = "Label" })
+	hl(0, "fugitiveStagedHeading", { fg = c.blue[8], bold = true })
+	hl(0, "fugitiveUnstagedHeading", { fg = c.blue[8], bold = true })
+	hl(0, "fugitiveStagedModifier", { fg = c.yellow[7] })
 	hl(0, "fugitiveUnstagedModifier", { fg = c.yellow[7] })
-	hl(0, "fugitiveUnstagedHeading", { fg = c.yellow[7] })
-	hl(0, "fugitiveStagedModifier", { fg = c.green[7] })
-	hl(0, "fugitiveStagedHeading", { fg = c.green[7] })
-	hl(0, "fugitiveCount", { fg = c.blue[9] })
 end
 
 return theme
