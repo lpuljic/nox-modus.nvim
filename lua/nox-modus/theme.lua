@@ -161,6 +161,7 @@ theme.set_highlights = function()
 	hl(0, "NvimTreeGitDirty", { fg = c.yellow0 })
 	hl(0, "NvimTreeSymlink", { fg = c.monsoon })
 	hl(0, "NvimTreeGitIgnored", { italic = true })
+	hl(0, "NvimTreeExecFile", { fg = c.grey_chateau, italic = true })
 
 	-- Telescope
 	hl(0, "TelescopeSelection", { bg = c.gray1 })
