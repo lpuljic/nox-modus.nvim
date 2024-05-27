@@ -219,7 +219,9 @@ theme.set_highlights = function()
 	hl(0, "@method", { link = "Function" })
 	hl(0, "@constructor", { link = "Function" })
 	hl(0, "@parameter", { link = "Identifier" })
+	hl(0, "@markup.heading.1.markdown", { fg = c.grey_chateau })
 	hl(0, "@markup.heading.3.vimdoc", { bg = c.gray1 })
+	hl(0, "@markup.raw.markdown_inline", { fg = c.olivine })
 
 	-- LSP
 	hl(0, "DiagnosticError", { fg = c.red }) -- Used as the base highlight group. Other Diagnostic highlights link to this by default
@@ -252,6 +254,7 @@ theme.set_highlights = function()
 	hl(0, "fugitiveHash", { link = "Label" })
 	hl(0, "fugitiveStagedHeading", { fg = c.grey_chateau, bold = true })
 	hl(0, "fugitiveUnstagedHeading", { fg = c.grey_chateau, bold = true })
+	hl(0, "fugitiveStagedSection", { fg = c.olivine })
 	hl(0, "fugitiveStagedModifier", { fg = c.yellow0 })
 	hl(0, "fugitiveUnstagedModifier", { fg = c.yellow0 })
 end
