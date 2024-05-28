@@ -123,7 +123,7 @@ theme.set_highlights = function()
 	hl(0, "StatusLineTerm", { fg = c.gray3 })
 	hl(0, "StatusLineTermNC", { fg = c.gray3 })
 
-	-- Git
+	-- lewis6991/gitsigns.nvim
 	hl(0, "SignAdd", { fg = c.olivine })
 	hl(0, "SignChange", { fg = c.orange2 })
 	hl(0, "SignDelete", { fg = c.red })
@@ -133,21 +133,14 @@ theme.set_highlights = function()
 	hl(0, "gitCommitSummary", { fg = c.base, bg = c.bg, italic = true })
 	hl(0, "gitCommitSelectedFile", { fg = c.cascade, bg = c.bg, italic = true })
 
-	-- Packer
-	hl(0, "packerString", { fg = c.orange2 })
-	hl(0, "packerHash", { fg = c.monsoon })
-	hl(0, "packerOutput", { fg = c.purple })
-	hl(0, "packerRelDate", { fg = c.gray3 })
-	hl(0, "packerSuccess", { fg = c.olivine })
-	hl(0, "packerStatusSuccess", { fg = c.monsoon })
-
+	-- hrsh7th/nvim-cmp
 	hl(0, "CmpPmenuSel", { fg = c.base, bg = c.gray1 })
 	hl(0, "CmpItemAbbrDeprecated", { fg = c.gray3, strikethrough = true })
 	hl(0, "CmpItemAbbrMatch", { fg = c.base })
 	hl(0, "CmpItemAbbrMatchFuzzy", { fg = c.base })
 	hl(0, "CmpItemKind", { fg = c.grey_chateau })
 
-	-- Nvim-Tree
+	-- kyazdani42/nvim-tree.lua
 	hl(0, "NvimTreeRootFolder", { fg = c.monsoon, italic = true })
 	hl(0, "NvimTreeFolderIcon", { fg = c.grey_chateau })
 	hl(0, "NvimTreeGitNew", { fg = c.olivine })
@@ -163,7 +156,7 @@ theme.set_highlights = function()
 	hl(0, "NvimTreeGitIgnored", { italic = true })
 	hl(0, "NvimTreeExecFile", { fg = c.grey_chateau, italic = true })
 
-	-- Telescope
+	-- nvim-telescope/telescope.nvim
 	hl(0, "TelescopeSelection", { bg = c.gray1 })
 	hl(0, "TelescopeSelectionCaret", { fg = c.grey_chateau })
 	hl(0, "TelescopeBorder", { fg = c.gray5 })
@@ -215,6 +208,7 @@ theme.set_highlights = function()
 	hl(0, "@string.special", { link = "Contstant" })
 	hl(0, "@function", { link = "Function" })
 	hl(0, "@function.builtin", { link = "Function" })
+	hl(0, "@function.method.call", { fg = c.cascade, italic = true, bold = true })
 	hl(0, "@function.macro", { link = "macro" })
 	hl(0, "@method", { link = "Function" })
 	hl(0, "@constructor", { link = "Function" })
@@ -243,7 +237,7 @@ theme.set_highlights = function()
 	hl(0, "LspReferenceRead", { bg = c.gray1 }) -- used for highlighting "read" references
 	hl(0, "LspReferenceWrite", { bg = c.gray1 }) -- used for highlighting "write" references
 
-	-- Illuminate
+	-- RRethy/vim-illuminate
 	hl(0, "IlluminatedWordText", { link = "LspReferenceText" })
 	hl(0, "IlluminatedWordRead", { link = "LspReferenceRead" })
 	hl(0, "IlluminatedWordWrite", { link = "LspReferenceWrite" })
