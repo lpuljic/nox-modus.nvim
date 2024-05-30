@@ -141,7 +141,7 @@ theme.set_highlights = function()
 	hl(0, "CmpItemKind", { fg = c.grey_chateau })
 
 	-- kyazdani42/nvim-tree.lua
-	hl(0, "NvimTreeRootFolder", { fg = c.monsoon, italic = true })
+	hl(0, "NvimTreeRootFolder", { fg = c.monsoon, italic = true, bold = true })
 	hl(0, "NvimTreeFolderIcon", { fg = c.grey_chateau })
 	hl(0, "NvimTreeGitNew", { fg = c.olivine })
 	hl(0, "NvimTreeOpenedFile", { italic = true })
