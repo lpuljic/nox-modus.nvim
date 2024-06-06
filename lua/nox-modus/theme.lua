@@ -28,6 +28,7 @@ theme.set_highlights = function()
 	hl(0, "Insert", { fg = c.red, bg = c.orange2 })
 	hl(0, "MsgArea", { fg = c.base, bg = c.bg }) -- Area for messages and cmdline
 	hl(0, "VertSplit", { fg = c.gray1 }) -- the column separating vertically split windows
+	hl(0, "WinSeparator", { fg = c.gray1 }) -- Colour vertically split line (See :h 'fillchars'.)
 	hl(0, "LineNr", { fg = c.gray1 }) -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 	hl(0, "CursorLineNr", { fg = c.yellow0, bg = c.bg }) -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 	hl(0, "CursorLine", { bg = c.gray8 }) -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
