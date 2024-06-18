@@ -165,7 +165,7 @@ theme.set_highlights = function()
 	hl(0, "TelescopePromptBorder", { fg = c.grey_chateau })
 	hl(0, "TelescopeResultsBorder", { fg = c.gray5 })
 	hl(0, "TelescopePreviewBorder", { fg = c.gray5 })
-	hl(0, "TelescopeMatching", { fg = c.yellow0 })
+	hl(0, "TelescopeMatching", { fg = c.yellow0, italic = true, bold = true })
 	hl(0, "TelescopePromptPrefix", { fg = c.grey_chateau })
 	hl(0, "TelescopePromptTitle", { fg = c.grey_chateau })
 
