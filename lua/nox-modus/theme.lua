@@ -158,6 +158,7 @@ theme.set_highlights = function()
 	hl(0, "NvimTreeExecFile", { fg = c.grey_chateau, italic = true })
 
 	-- nvim-telescope/telescope.nvim
+	hl(0, "TelescopePromptNormal", { bg = c.gray8 })
 	hl(0, "TelescopeSelection", { bg = c.gray1 })
 	hl(0, "TelescopeSelectionCaret", { fg = c.grey_chateau })
 	hl(0, "TelescopeBorder", { fg = c.gray5 })
