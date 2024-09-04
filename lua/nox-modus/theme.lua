@@ -218,7 +218,7 @@ theme.set_highlights = function()
 	hl(0, "@parameter", { link = "Identifier" })
 	hl(0, "@markup.heading.1.markdown", { fg = c.grey_chateau })
 	hl(0, "@markup.heading.3.vimdoc", { bg = c.gravel })
-	hl(0, "@markup.raw.markdown_inline", { fg = c.olivine })
+	hl(0, "@markup.raw.markdown_inline", { fg = c.grey_chateau })
 
 	-- LSP
 	hl(0, "DiagnosticError", { fg = c.red }) -- Used as the base highlight group. Other Diagnostic highlights link to this by default
