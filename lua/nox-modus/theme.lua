@@ -193,6 +193,7 @@ theme.set_highlights = function()
 	hl(0, "markdownItalic", { link = "Italic" })
 	hl(0, "markdownBoldItalic", { fg = c.yellow0, bold = true, italic = true })
 	hl(0, "markdownBold", { bold = true })
+	hl(0, "RenderMarkdownCode", { bg = c.gray8 })
 
 	-- Treesitter
 	hl(0, "@comment", { link = "Comment" })
