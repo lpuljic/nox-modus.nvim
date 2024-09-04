@@ -81,7 +81,7 @@ theme.set_highlights = function()
 
 	-- Code
 	hl(0, "Comment", { fg = c.storm_dust, italic = true }) -- any comment
-2	hl(0, "Title", { fg = c.warm_grey, bold = true }) -- titles for output from ":set all", ":autocmd" etc.
+	hl(0, "Title", { fg = c.warm_grey, bold = true }) -- titles for output from ":set all", ":autocmd" etc.
 	hl(0, "String", { fg = c.cascade }) --   a string constant: "this is a string"
 	hl(0, "Character", { fg = c.ash_grey }) --  a character constant: 'c', '\n'
 	hl(0, "Number", { fg = c.dawn }) --   a number constant: 234, 0xff
