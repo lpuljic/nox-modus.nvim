@@ -1,4 +1,5 @@
 local M = {}
+
 local theme = require("nox-modus.theme")
 
 M.setup = function()
