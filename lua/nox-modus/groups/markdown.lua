@@ -36,7 +36,7 @@ function M.highlight(c)
 	markdownItalic =  { link = "Italic" },
 	markdownBoldItalic =  { fg = c.sunglow, bold = true, italic = true },
 	markdownBold =  { bold = true },
-	RenderMarkdownCode =  { bg = c.zeus })
+	RenderMarkdownCode =  { bg = c.zeus },
     }
 end
 
