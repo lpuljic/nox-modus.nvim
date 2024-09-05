@@ -1,0 +1,46 @@
+
+local M = {}
+--Style Options:
+--
+--    o: standout
+--    u: underline
+--    c: undercurl
+--    d: underdouble
+--    t: underdotted
+--    h: underdashed
+--    s: strikethrough
+--    i: italic
+--    b: bold
+--    r: reverse
+--    n: nocombine
+
+function M.highlight(c)
+	return {
+	-- Treesitter
+	["@comment"] =  { link = "Comment" },
+	["@comment.error"] =  { fg = c.red },
+	["@comment.warning"] =  { fg = c.sunglow },
+	["@comment.todo"] =  { fg = c.purple },
+	["@comment.hint"] =  { fg = c.celestial_blue },
+	["@comment.note"] =  { fg = c.celestial_blue },
+	["@variable"] =  { link = "Identifier" },
+	["@variable.builtin"] =  { fg = c.grey_chateau },
+	["@string"] =  { link = "String" },
+	["@string.documentation"] =  { link = "String" },
+	["@string.regex"] =  { link = "Constant" },
+	["@string.escape"] =  { link = "Constant" },
+	["@string.special"] =  { link = "Contstant" },
+	["@function"] =  { link = "Function" },
+	["@function.builtin"] =  { link = "Function" },
+	["@function.method.call"] =  { fg = c.cascade, italic = true, bold = true },
+	["@function.macro"] =  { link = "macro" },
+	["@method"] =  { link = "Function" },
+	["@constructor"] =  { link = "Function" },
+	["@parameter"] =  { link = "Identifier" },
+	["@markup.heading.1.markdown"] =  { fg = c.grey_chateau },
+	["@markup.heading.3.vimdoc"] =  { bg = c.gravel },
+	["@markup.raw.markdown_inline"] =  { fg = c.olivine },
+    }
+end
+
+return M
