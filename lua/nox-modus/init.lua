@@ -1,8 +1,6 @@
 local M = {}
 
-local theme = require("nox-modus.theme")
-
-M.setup = function()
+function M.load()
 	vim.cmd("hi clear")
 
 	if vim.fn.exists("syntax_on") then
@@ -15,7 +13,7 @@ M.setup = function()
 
 	local palette = require("nox-modus.palette")
 	local util = require("nox-modus.util")
-	local groups = require("no-clown-fiesta.groups")
+	local groups = require("nox-modus.groups")
 
 	for _, group in ipairs(groups) do
 		group = group.highlight(palette)
