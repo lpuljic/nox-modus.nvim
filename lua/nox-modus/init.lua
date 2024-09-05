@@ -1,6 +1,6 @@
 local M = {}
 
-function M.load()
+function M.setup()
 	vim.cmd("hi clear")
 
 	if vim.fn.exists("syntax_on") then
