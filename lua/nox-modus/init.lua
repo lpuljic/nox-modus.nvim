@@ -7,7 +7,7 @@ M.setup = function()
 
 	vim.o.background = "dark"
 	if vim.fn.exists("syntax_on") then
-		vim.cmd("syntax reset")
+		vim.api.nvim_command("syntax reset")
 	end
 
 	vim.o.termguicolors = true
