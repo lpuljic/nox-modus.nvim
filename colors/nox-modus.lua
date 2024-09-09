@@ -1,1 +1,1 @@
-require("nox-modus").setup({})
+require("nox-modus").setup()

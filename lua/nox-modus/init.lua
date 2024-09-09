@@ -1,18 +1,24 @@
 local M = {}
-local theme = require("nox-modus.theme")
 
-M.setup = function()
+function M.setup()
 	vim.cmd("hi clear")
 
-	vim.o.background = "dark"
 	if vim.fn.exists("syntax_on") then
-		vim.cmd("syntax reset")
+		vim.api.nvim_command("syntax reset")
 	end
 
+	vim.o.background = "dark"
 	vim.o.termguicolors = true
 	vim.g.colors_name = "nox-modus"
 
-	theme.set_highlights()
+	local palette = require("nox-modus.palette")
+	local util = require("nox-modus.util")
+	local groups = require("nox-modus.groups")
+
+	for _, group in ipairs(groups) do
+		group = group.highlight(palette)
+		util.initialise(group)
+	end
 
 	-- Hide all semantic highlights
 	for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
