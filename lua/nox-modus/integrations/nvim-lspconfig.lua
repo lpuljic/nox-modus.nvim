@@ -20,7 +20,7 @@ function M.highlight(c)
 	DiagnosticWarn = { fg = c.sunglow },  -- Used as the base highlight group. Other Diagnostic highlights link to this by default
 	DiagnosticInfo = { fg = c.celestial_blue },  -- Used as the base highlight group. Other Diagnostic highlights link to this by default
 	DiagnosticHint = { fg = c.celestial_blue },  -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-	DiagnosticVirtualTextError = { fg = c.red }, -- Used for "Error" diagnostic virtual text
+	DiagnosticVirtualTextError = { bg = util.blend(c.bg, c.red, 0.10), fg = c.red }, -- Used for "Error" diagnostic virtual text
 	DiagnosticVirtualTextWarn = { fg = c.sunglow },  -- Used for "Warning" diagnostic virtual text
 	DiagnosticVirtualTextInfo = { fg = c.celestial_blue },  -- Used for "Information" diagnostic virtual text
 	DiagnosticVirtualTextHint = { fg = c.celestial_blue },  -- Used for "Hint" diagnostic virtua

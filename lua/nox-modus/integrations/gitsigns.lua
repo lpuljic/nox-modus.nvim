@@ -22,8 +22,6 @@ function M.highlight(c)
 	GitSignsAdd =  { fg = c.olivine }, -- diff mode: Added line |diff.txt|
 	GitSignsChange =  { fg = c.orange }, -- diff mode: Changed line |diff.txt|
 	GitSignsDelete =  { fg = c.red }, -- diff mode: Deleted line |diff.txt|
-	gitCommitSummary =  { fg = c.base, bg = c.bg, italic = true },
-	gitCommitSelectedFile =  { fg = c.cascade, bg = c.bg, italic = true },
     }
 end
 

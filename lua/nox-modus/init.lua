@@ -13,9 +13,9 @@ function M.setup()
 
 	local palette = require("nox-modus.palette")
 	local util = require("nox-modus.util")
-	local groups = require("nox-modus.groups")
+	local integrations = require("nox-modus.integrations")
 
-	for _, group in ipairs(groups) do
+	for _, group in ipairs(integrations) do
 		group = group.highlight(palette)
 		util.initialise(group)
 	end
