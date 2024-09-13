@@ -1,5 +1,5 @@
-local util = require("nox-modus.util")
 local M = {}
+local util = require("nox-modus.util")
 --Style Options:
 --
 --    o: standout
@@ -27,7 +27,7 @@ function M.highlight(c)
 		fugitiveUnstagedModifier = { fg = c.sunglow },
 		gitCommitSummary = { fg = c.base, bg = c.bg, italic = true },
 		gitCommitSelectedFile = { fg = c.cascade, bg = c.bg, italic = true },
-		["@comment.warning.gitcommit"] = { bg = util.blend(c.orange, c.bg0, 0.75) },
+		["@comment.warning.gitcommit"] = { bg = util.blend(c.orange, c.bg, 0.75) },
 	}
 end
 
