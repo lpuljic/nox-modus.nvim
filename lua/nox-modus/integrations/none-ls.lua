@@ -1,4 +1,3 @@
-
 local M = {}
 --Style Options:
 --
@@ -16,9 +15,9 @@ local M = {}
 
 function M.highlight(c)
 	return {
-	-- nvimtools/none-ls.nvim
-    NullLsInfoBorder = { fg = c.ash_grey },
-    }
+		-- nvimtools/none-ls.nvim
+		NullLsInfoBorder = { fg = c.ash_grey },
+	}
 end
 
 return M

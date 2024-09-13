@@ -15,13 +15,13 @@ local M = {}
 
 function M.highlight(c)
 	return {
-	-- hrsh7th/nvim-cmp
-	CmpPmenuSel =  { fg = c.base, bg = c.gravel },
-	CmpItemAbbrDeprecated =  { fg = c.ash_grey, strikethrough = true },
-	CmpItemAbbrMatch =  { fg = c.base },
-	CmpItemAbbrMatchFuzzy =  { fg = c.base },
-	CmpItemKind =  { fg = c.grey_chateau },
-    }
+		-- hrsh7th/nvim-cmp
+		CmpPmenuSel = { fg = c.base, bg = c.gravel },
+		CmpItemAbbrDeprecated = { fg = c.ash_grey, strikethrough = true },
+		CmpItemAbbrMatch = { fg = c.base },
+		CmpItemAbbrMatchFuzzy = { fg = c.base },
+		CmpItemKind = { fg = c.grey_chateau },
+	}
 end
 
 return M

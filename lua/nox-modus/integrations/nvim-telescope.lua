@@ -15,19 +15,19 @@ local M = {}
 
 function M.highlight(c)
 	return {
-	-- nvim-telescope/telescope.nvim
-	TelescopePromptNormal =  { bg = c.zeus },
-	TelescopeSelection =  { bg = c.gravel },
-	TelescopeSelectionCaret =  { fg = c.grey_chateau },
-	TelescopeBorder =  { fg = c.warm_grey },
-	TelescopePromptfix =  { fg = c.red },
-	TelescopePromptBorder =  { fg = c.grey_chateau },
-	TelescopeResultsBorder =  { fg = c.warm_grey },
-	TelescopePreviewBorder =  { fg = c.warm_grey },
-	TelescopeMatching =  { fg = c.sunglow, italic = true, bold = true },
-	TelescopePromptPrefix =  { fg = c.grey_chateau },
-	TelescopePromptTitle =  { fg = c.grey_chateau },
-    }
+		-- nvim-telescope/telescope.nvim
+		TelescopePromptNormal = { bg = c.zeus },
+		TelescopeSelection = { bg = c.gravel },
+		TelescopeSelectionCaret = { fg = c.grey_chateau },
+		TelescopeBorder = { fg = c.warm_grey },
+		TelescopePromptfix = { fg = c.red },
+		TelescopePromptBorder = { fg = c.grey_chateau },
+		TelescopeResultsBorder = { fg = c.warm_grey },
+		TelescopePreviewBorder = { fg = c.warm_grey },
+		TelescopeMatching = { fg = c.sunglow, italic = true, bold = true },
+		TelescopePromptPrefix = { fg = c.grey_chateau },
+		TelescopePromptTitle = { fg = c.grey_chateau },
+	}
 end
 
 return M
