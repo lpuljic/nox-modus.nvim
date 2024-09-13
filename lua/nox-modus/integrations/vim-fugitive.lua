@@ -1,4 +1,4 @@
-
+local util = require('nox-modus.util')
 local M = {}
 --Style Options:
 --
