@@ -22,9 +22,9 @@ function M.highlight(c)
 		DiagnosticInfo = { fg = c.celestial_blue }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
 		DiagnosticHint = { fg = c.celestial_blue }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
 		DiagnosticVirtualTextError = { bg = util.blend(c.bg, c.red, 0.10), fg = c.red }, -- Used for "Error" diagnostic virtual text
-		DiagnosticVirtualTextWarn = { bg = util.blend(c.bg, c.sunglow, 0.10), fg = c.sunglow }, -- Used for "Warning" diagnostic virtual text
-		DiagnosticVirtualTextInfo = { bg = util.blend(c.bg, c.celestial_blue, 0.10), fg = c.celestial_blue }, -- Used for "Information" diagnostic virtual text
-		DiagnosticVirtualTextHint = { bg = util.blend(c.bg, c.celestial_blue, 0.10), fg = c.celestial_blue }, -- Used for "Hint" diagnostic virtua
+		DiagnosticVirtualTextWarn = { bg = util.blend(c.bg, c.sunglow, 0.12), fg = c.sunglow }, -- Used for "Warning" diagnostic virtual text
+		DiagnosticVirtualTextInfo = { bg = util.blend(c.bg, c.celestial_blue, 0.12), fg = c.celestial_blue }, -- Used for "Information" diagnostic virtual text
+		DiagnosticVirtualTextHint = { bg = util.blend(c.bg, c.celestial_blue, 0.12), fg = c.celestial_blue }, -- Used for "Hint" diagnostic virtua
 		DiagnosticUnderlineError = { sp = c.red, undercurl = true }, -- Used to underline "Error" diagnostics
 		DiagnosticUnderlineWarn = { sp = c.sunglow, undercurl = true }, -- Used to underline "Warning" diagnostics
 		DiagnosticUnderlineInfo = { sp = c.celestial_blue, undercurl = true }, -- Used to underline "Information" diagnostics

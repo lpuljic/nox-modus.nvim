@@ -20,7 +20,7 @@ function M.setup()
 		util.initialise(group)
 	end
 
-	-- Hide all semantic highlights
+	-- Hide all semantic highlights ( maybe this should be a setting option ????)
 	for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
 		vim.api.nvim_set_hl(0, group, {})
 	end
