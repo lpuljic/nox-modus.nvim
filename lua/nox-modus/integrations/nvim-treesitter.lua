@@ -36,9 +36,12 @@ function M.highlight(c)
 		["@method"] = { link = "Function" },
 		["@constructor"] = { link = "Function" },
 		["@parameter"] = { link = "Identifier" },
-		["@markup.heading.1.markdown"] = { fg = c.grey_chateau },
 		["@markup.heading.3.vimdoc"] = { bg = c.gravel },
-		["@markup.raw.markdown_inline"] = { fg = c.olivine },
+		["@markup.raw.markdown_inline"] = { fg = c.dawn, italic = true, bold = true },
+		["@markup.quote.markdown"] = { fg = c.grey_chateau },
+		["@markup.heading.1.markdown"] = { link = "markdownH1" },
+		["@markup.heading.2.markdown"] = { link = "markdownH2" },
+		["@markup.heading.3.markdown"] = { link = "markdownH3" },
 	}
 end
 

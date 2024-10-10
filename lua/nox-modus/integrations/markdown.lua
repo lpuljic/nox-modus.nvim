@@ -20,9 +20,9 @@ function M.highlight(c)
 		markdownCodeBlock = { fg = c.gravel },
 		markdownCodeDelimiter = { fg = c.base },
 		markdownBlockquote = { fg = c.mocha },
-		markdownH1 = { fg = c.celestial_blue, bold = true },
-		markdownH2 = { fg = c.celestial_blue, bold = true },
-		markdownH3 = { fg = c.celestial_blue, bold = true },
+		markdownH1 = { fg = c.base, bold = true },
+		markdownH2 = { fg = c.base, bold = true },
+		markdownH3 = { fg = c.base, bold = true },
 		markdownH4 = { fg = c.celestial_blue, bold = true },
 		markdownH5 = { fg = c.celestial_blue, bold = true },
 		markdownH6 = { fg = c.celestial_blue, bold = true },
@@ -36,6 +36,9 @@ function M.highlight(c)
 		markdownBoldItalic = { fg = c.sunglow, bold = true, italic = true },
 		markdownBold = { bold = true },
 		RenderMarkdownCode = { bg = c.zeus },
+		RenderMarkdownH1Bg = { bg = c.gun_powder },
+		RenderMarkdownH2Bg = { bg = c.gravel },
+		RenderMarkdownH3Bg = { bg = c.grstorm_dustavel },
 	}
 end
 
