@@ -31,7 +31,7 @@ function M.highlight(c)
 		["@string.special"] = { link = "Contstant" },
 		["@function"] = { link = "Function" },
 		["@function.builtin"] = { link = "Function" },
-		["@function.method.call"] = { fg = c.cascade, italic = true, bold = true },
+		["@function.method.call"] = { fg = c.cascade, italic = true },
 		["@function.macro"] = { link = "macro" },
 		["@method"] = { link = "Function" },
 		["@constructor"] = { link = "Function" },
