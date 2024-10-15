@@ -1,7 +1,11 @@
-local config = require("nox-modus.theme")
+local theme = require("nox-modus.theme")
 
-local M = {
-	setup = config.setup,
-}
+local M = {}
+
+function M.load()
+	theme.setup = theme.setup
+end
+
+M.setup = theme.setup
 
 return M
