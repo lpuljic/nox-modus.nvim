@@ -36,7 +36,7 @@ function M.highlight(c)
 		["@method"] = { link = "Function" },
 		["@constructor"] = { link = "Function" },
 		["@parameter"] = { link = "Identifier" },
-		["@markup.raw.markdown_inline"] = { fg = c.dawn, italic = true, bold = true },
+		["@markup.raw.markdown_inline"] = { fg = c.grey_chateau, italic = true, bold = true },
 		["@markup.quote"] = { link = "RenderMarkdownQuote" },
 		["@markup.heading.1.markdown"] = { link = "markdownH1" },
 		["@markup.heading.2.markdown"] = { link = "markdownH2" },
