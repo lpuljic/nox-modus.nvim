@@ -20,6 +20,7 @@ local colors = {
 	mocha = "#A47663", -- 3
 	orange = "#C5630C", -- 6
 	sunglow = "#FAC03B", -- 15
+	golden_glow = "#FCE094",
 	git = {
 		DiffAdd = "#294841", -- 2
 		DiffDelete = "#6A2835", -- 2
