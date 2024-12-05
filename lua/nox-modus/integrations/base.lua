@@ -43,8 +43,8 @@ function M.highlight(c)
 		Error = { fg = c.red, bold = true }, -- (preferred, any erroneous construct
 		Visual = { fg = c.gravel, bg = c.ash_grey }, -- Visual mode selection
 		VisualNOS = { bg = c.red }, -- Visual mode selection when vim is "Not Owning the Selection".
-		Search = { fg = c.bg, bg = c.golden_glow }, -- Last search pattern highlighting (see 'hlsearch',.  Also used for similar items that need to stand out.
-		IncSearch = { fg = c.bg, bg = c.golden_gloww }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+		Search = { link = "Visual" }, -- Last search pattern highlighting (see 'hlsearch',.  Also used for similar items that need to stand out.
+		IncSearch = { link = "Visual" }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
 		Pmenu = { fg = c.base, bg = c.gravel }, -- Popup menu: normal item.
 		PmenuSel = { fg = c.base, bg = c.storm_dust }, -- Popup menu: selected item.
 		PmenuSbar = { fg = c.base, bg = c.gravel }, -- Popup menu: scrollbar.
