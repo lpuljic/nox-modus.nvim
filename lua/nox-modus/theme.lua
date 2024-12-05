@@ -17,12 +17,13 @@ function M.setup()
 	local util = require("nox-modus.util")
 	local integrations = require("nox-modus.integrations")
 
+	-- Integrate with other plugins
 	for _, integration in ipairs(integrations) do
 		local highlightedGroup = integration.highlight(palette)
 		util.initialise(highlightedGroup)
 	end
 
-	-- Hide all semantic highlights ( maybe this should be a setting option ????)
+	-- Hide all semantic highlights.
 	for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
 		vim.api.nvim_set_hl(0, group, {})
 	end
