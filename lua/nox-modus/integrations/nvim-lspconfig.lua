@@ -29,6 +29,7 @@ function M.highlight(c)
 		DiagnosticUnderlineWarn = { sp = c.sunglow, undercurl = true }, -- Used to underline "Warning" diagnostics
 		DiagnosticUnderlineInfo = { sp = c.celestial_blue, undercurl = true }, -- Used to underline "Information" diagnostics
 		DiagnosticUnderlineHint = { sp = c.celestial_blue, undercurl = true }, -- Used to underline "Hint" diagn
+		DiagnosticUnnecessary = {},
 		LspReferenceText = { bg = c.gravel }, -- used for highlighting "text" references
 		LspReferenceRead = { bg = c.gravel }, -- used for highlighting "read" references
 		LspReferenceWrite = { bg = c.gravel }, -- used for highlighting "write" references
