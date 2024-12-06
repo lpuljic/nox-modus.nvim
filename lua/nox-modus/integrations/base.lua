@@ -32,10 +32,10 @@ function M.highlight(c)
 		SignColumn = { bg = c.bg }, -- column where |signs| are displayed
 		ColorColumn = { bg = c.zeus }, -- used for the columns set with 'colorcolumn'
 		CursorColumn = { bg = c.gravel }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-		SpellBad = { fg = c.red, undercurl = true }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
-		SpellCap = { fg = c.sunglow, undercurl = true }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
-		SpellLocal = { fg = c.celestial_blue, undercurl = true }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
-		SpellRare = { fg = c.celestial_blue, undercurl = true }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
+		SpellBad = { sp = c.red, undercurl = true }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
+		SpellCap = { sp = c.sunglow, undercurl = true }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
+		SpellLocal = { sp = c.celestial_blue, undercurl = true }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
+		SpellRare = { sp = c.celestial_blue, undercurl = true }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
 		ErrorMsg = { fg = c.red, bg = c.bg, bold = true }, -- error messages on the command line
 		WarningMsg = { fg = c.orange, bg = c.bg }, -- warning messages
 		ModeMsg = { fg = c.base, bg = c.bg },
