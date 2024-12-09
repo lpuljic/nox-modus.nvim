@@ -9,4 +9,5 @@ return {
 	require("nox-modus.integrations.nvim-telescope"),
 	require("nox-modus.integrations.nvim-treesitter"),
 	require("nox-modus.integrations.nvim-lspconfig"),
+	require("nox-modus.integrations.semantic_tokens"),
 }

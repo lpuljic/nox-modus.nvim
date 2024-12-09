@@ -15,16 +15,9 @@ local M = {}
 
 function M.highlight(c)
 	return {
-		-- Comment
-		["@comment"] = { link = "Comment" },
-		["@comment.error"] = { fg = c.red },
-		["@comment.warning"] = { fg = c.sunglow },
-		["@comment.todo"] = { fg = c.purple },
-		["@comment.hint"] = { fg = c.celestial_blue },
-		["@comment.note"] = { fg = c.celestial_blue },
-
 		-- Identifiers
 		["@variable"] = { link = "Identifier" },
+		["@variable.member"] = { fg = c.base },
 		["@variable.builtin"] = { fg = c.grey_chateau },
 
 		-- Literals
@@ -34,23 +27,33 @@ function M.highlight(c)
 		["@string.escape"] = { link = "Constant" },
 		["@string.special"] = { link = "Contstant" },
 
+		-- Types
+		["@property"] = { link = "@variable.member" },
+
 		-- Functions
 		["@function"] = { link = "Function" },
 		["@function.builtin"] = { link = "Function" },
 		["@function.method.call"] = { fg = c.cascade, italic = true },
 		["@function.macro"] = { link = "macro" },
 		["@constructor"] = { link = "Function" },
-
 		["@method"] = { link = "Function" },
 		["@parameter"] = { link = "Identifier" },
 
+		-- Comment
+		["@comment"] = { link = "Comment" },
+		["@comment.error"] = { fg = c.red },
+		["@comment.warning"] = { fg = c.sunglow },
+		["@comment.todo"] = { fg = c.purple },
+		["@comment.hint"] = { fg = c.celestial_blue },
+		["@comment.note"] = { fg = c.celestial_blue },
+
 		-- Markup
+		["@nospell.markdown_inline"] = { fg = c.base },
+		["@markup.quote"] = { link = "RenderMarkdownQuote" },
 		["@markup.raw.markdown_inline"] = { fg = c.grey_chateau },
 		["@markup.link.markdown_inline"] = { fg = c.grey_chateau },
 		["@markup.link.label.markdown_inline"] = { fg = c.grey_chateau },
-		["@nospell.markdown_inline"] = { fg = c.base },
 		["@markup.raw.block.markdown"] = { fg = c.grey_chateau },
-		["@markup.quote"] = { link = "RenderMarkdownQuote" },
 		["@markup.heading.1.markdown"] = { link = "markdownH1" },
 		["@markup.heading.2.markdown"] = { link = "markdownH2" },
 		["@markup.heading.3.markdown"] = { link = "markdownH3" },

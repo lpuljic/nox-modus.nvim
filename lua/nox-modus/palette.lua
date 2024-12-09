@@ -27,5 +27,9 @@ local colors = {
 		DiffChange = "#49423C", -- 2
 		DiffText = "#C5630C", -- 2
 	},
+	diagnostics = {
+		DiagnosticError = "#be7c7d",
+		DiagnosticWarn = "#aa8a69",
+	},
 }
 return colors
