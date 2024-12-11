@@ -58,6 +58,7 @@ function M.highlight(c)
 		["@markup.heading.2.markdown"] = { link = "markdownH2" },
 		["@markup.heading.3.markdown"] = { link = "markdownH3" },
 		["@_label.markdown_inline"] = { link = "Label" },
+		["@markup.strikethrough"] = { fg = c.dawn, strikethrough = true },
 	}
 end
 
