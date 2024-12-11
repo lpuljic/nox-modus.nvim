@@ -17,6 +17,7 @@ local M = {}
 function M.highlight(c)
 	return {
 		-- neovim/nvim-lspconfig
+		DiagnosticOk = { fg = c.olivine },
 		DiagnosticError = { fg = c.diagnostics.DiagnosticError }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
 		DiagnosticWarn = { fg = c.sunglow }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
 		DiagnosticInfo = { fg = c.celestial_blue }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
