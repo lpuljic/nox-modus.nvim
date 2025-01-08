@@ -18,7 +18,7 @@ function M.highlight(c)
 		-- editor
 		Normal = { fg = c.base, bg = c.bg }, -- normal text
 		NormalNC = { fg = c.base, bg = c.bg }, -- normal text in non-current windows
-		Cursor = { fg = c.gun_powder, bg = c.Aluminium }, -- character under the cursor
+		Cursor = { fg = c.gun_powder, bg = c.aluminium }, -- character under the cursor
 		Underlined = { underline = true }, -- (preferred, text that stands out, HTML links
 		SpecialKey = { fg = c.base, bold = true }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
 		NonText = { fg = c.storm_dust }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line,. See also |hl-EndOfBuffer|.
@@ -63,10 +63,10 @@ function M.highlight(c)
 		qfFileName = { fg = c.base },
 		qfLineNr = { fg = c.sunglow },
 		MatchParen = { fg = c.orange }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
-		lCursor = { fg = c.gun_powder, bg = c.Aluminium }, -- the character under the cursor when |language-mapping| is used (see 'guicursor',
-		CursorIM = { fg = c.gun_powder, bg = c.Aluminium }, -- like Cursor, but used when in IME mode |CursorIM|
-		TermCursor = { fg = c.gun_powder, bg = c.Aluminium }, -- cursor in a focused terminal
-		TermCursorNC = { fg = c.gun_powder, bg = c.Aluminium }, -- cursor in an unfocused terminal
+		lCursor = { fg = c.gun_powder, bg = c.aluminium }, -- the character under the cursor when |language-mapping| is used (see 'guicursor',
+		CursorIM = { fg = c.gun_powder, bg = c.aluminium }, -- like Cursor, but used when in IME mode |CursorIM|
+		TermCursor = { fg = c.gun_powder, bg = c.aluminium }, -- cursor in a focused terminal
+		TermCursorNC = { fg = c.gun_powder, bg = c.aluminium }, -- cursor in an unfocused terminal
 		Conceal = { fg = c.base }, -- placeholder characters substituted for concealed text (see 'conceallevel',
 		Directory = { fg = c.dawn }, -- directory names (and other special names in listings,
 		Substitute = { fg = c.bg, bg = c.ash_grey }, -- |:substitute| replacement text highlighting
