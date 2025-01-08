@@ -59,6 +59,7 @@ function M.highlight(c)
 		["@markup.heading.3.markdown"] = { link = "markdownH3" },
 		["@_label.markdown_inline"] = { link = "Label" },
 		["@markup.strikethrough"] = { fg = c.dawn, strikethrough = true },
+		["@markup.list.markdown"] = { link = "RenderMarkdownCodeInline" },
 	}
 end
 

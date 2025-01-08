@@ -40,7 +40,7 @@ function M.highlight(c)
 		markdownBoldItalic = { fg = c.sunglow, bold = true, italic = true },
 		markdownBold = { bold = true },
 		RenderMarkdownQuote = { fg = c.dawn, italic = true },
-		RenderMarkdownCodeInline = { fg = c.Aluminium, bg = c.dune },
+		RenderMarkdownCodeInline = { fg = c.sunglow },
 		RenderMarkdownInlineHighlight = { fg = c.bg, bg = c.monsoon },
 	}
 end

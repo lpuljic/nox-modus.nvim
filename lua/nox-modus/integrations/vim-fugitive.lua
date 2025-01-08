@@ -1,5 +1,4 @@
 local M = {}
-local util = require("nox-modus.util")
 --Style Options:
 --
 --    o: standout
@@ -25,9 +24,9 @@ function M.highlight(c)
 		fugitiveStagedSection = { fg = c.olivine },
 		fugitiveStagedModifier = { fg = c.sunglow },
 		fugitiveUnstagedModifier = { fg = c.sunglow },
-		gitCommitSummary = { fg = c.base, bg = c.bg, italic = true },
+		gitCommitSummary = { fg = c.base, bg = c.bg, bold = true },
 		gitCommitSelectedFile = { fg = c.cascade, bg = c.bg, italic = true },
-		["@comment.warning.gitcommit"] = { bg = util.blend(c.orange, c.bg, 0.75) },
+		gitcommitOverflow = { fg = c.sunglow },
 	}
 end
 
