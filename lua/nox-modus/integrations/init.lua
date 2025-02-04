@@ -1,6 +1,7 @@
 return {
 	require("nox-modus.integrations.base"),
 	require("nox-modus.integrations.yaml"),
+	require("nox-modus.integrations.vimdoc"),
 	require("nox-modus.integrations.gitsigns"),
 	require("nox-modus.integrations.none-ls"),
 	require("nox-modus.integrations.markdown"),
