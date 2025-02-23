@@ -15,9 +15,12 @@ local M = {}
 
 function M.highlight(c)
 	return {
+		--- Treesitter
+		--- |:help treesitter-highlight-groups|
+
 		-- Identifiers
-		["@variable"] = { link = "Identifier" },
-		["@variable.member"] = { fg = c.base },
+		["@variable"] = { link = "Variable" },
+		["@variable.member"] = { link = "@variable" },
 		["@variable.builtin"] = { fg = c.grey_chateau },
 
 		-- Literals

@@ -29,10 +29,10 @@ function M.highlight(c)
 		DiagnosticVirtualTextWarn = { bg = util.blend(c.bg, c.sunglow, 0.12), fg = c.sunglow }, -- Used for "Warning" diagnostic virtual text
 		DiagnosticVirtualTextInfo = { bg = util.blend(c.bg, c.celestial_blue, 0.12), fg = c.celestial_blue }, -- Used for "Information" diagnostic virtual text
 		DiagnosticVirtualTextHint = { bg = util.blend(c.bg, c.celestial_blue, 0.12), fg = c.celestial_blue }, -- Used for "Hint" diagnostic virtua
-		DiagnosticUnderlineError = { sp = c.diagnostics.DiagnosticError, underline = true }, -- Used to underline "Error" diagnostics
-		DiagnosticUnderlineWarn = { sp = c.sunglow, underline = true }, -- Used to underline "Warning" diagnostics
-		DiagnosticUnderlineInfo = { sp = c.celestial_blue, underline = true }, -- Used to underline "Information" diagnostics
-		DiagnosticUnderlineHint = { sp = c.celestial_blue, underline = true }, -- Used to underline "Hint" diagn
+		DiagnosticUnderlineError = { sp = c.diagnostics.DiagnosticError, undercurl = true }, -- Used to underline "Error" diagnostics
+		DiagnosticUnderlineWarn = { sp = c.sunglow, undercurl = true }, -- Used to underline "Warning" diagnostics
+		DiagnosticUnderlineInfo = { sp = c.celestial_blue, undercurl = true }, -- Used to underline "Information" diagnostics
+		DiagnosticUnderlineHint = { sp = c.celestial_blue, undercurl = true }, -- Used to underline "Hint" diagn
 		DiagnosticUnnecessary = {},
 		LspReferenceText = { bg = c.gravel }, -- used for highlighting "text" references
 		LspReferenceRead = { bg = c.gravel }, -- used for highlighting "read" references
