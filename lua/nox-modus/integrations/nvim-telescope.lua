@@ -27,6 +27,7 @@ function M.highlight(c)
 		TelescopeMatching = { fg = c.sunglow, italic = true, bold = true },
 		TelescopePromptPrefix = { fg = c.grey_chateau },
 		TelescopePromptTitle = { fg = c.grey_chateau },
+		TelescopeResultsComment = { fg = c.storm_dust },
 	}
 end
 

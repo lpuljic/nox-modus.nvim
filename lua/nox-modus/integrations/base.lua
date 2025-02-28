@@ -76,7 +76,7 @@ function M.highlight(c)
 		TabLineSel = { fg = c.base, bg = c.bg }, -- tab pages line, active tab page label
 		TabLineFill = { fg = c.bg, bg = c.bg }, -- tab pages line, where there are no labels
 		-- Code
-		Comment = { fg = c.storm_dust, italic = true }, -- any comment
+		Comment = { fg = c.gravel, italic = true }, -- any comment
 		Title = { fg = c.warm_grey, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
 		String = { fg = c.cascade }, --   a string constant: "this is a string"
 		Character = { fg = c.ash_grey }, --  a character constant: 'c', '\n'
