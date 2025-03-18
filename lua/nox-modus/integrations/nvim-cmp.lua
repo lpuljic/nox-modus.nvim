@@ -18,7 +18,7 @@ function M.highlight(c)
 		-- hrsh7th/nvim-cmp
 		CmpPmenuSel = { fg = c.base, bg = c.gravel },
 		CmpItemAbbrDeprecated = { fg = c.ash_grey, strikethrough = true },
-		CmpItemAbbrMatch = { fg = c.base },
+		CmpItemAbbrMatch = { fg = c.sunglow },
 		CmpItemAbbrMatchFuzzy = { fg = c.base },
 		CmpItemKind = { fg = c.grey_chateau },
 	}

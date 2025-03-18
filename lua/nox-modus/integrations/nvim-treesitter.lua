@@ -31,7 +31,8 @@ function M.highlight(c)
 		["@string.special"] = { link = "Contstant" },
 
 		-- Types
-		["@property"] = { link = "@variable.member" },
+		["@property"] = { fg = c.monsoon },
+		["@type.builtin"] = { fg = c.grey_chateau, bold = true },
 
 		-- Functions
 		["@function"] = { link = "Function" },
