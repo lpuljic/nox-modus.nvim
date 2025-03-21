@@ -106,6 +106,7 @@ function M.highlight(c)
 		Special = { fg = c.grey_chateau }, -- (preferred, any special symbol
 		SpecialChar = { fg = c.base }, --  special character in a constant
 		Tag = { fg = c.ash_grey }, --    you can use CTRL-] on this
+		Property = { fg = c.base }, --    you can use CTRL-] on this
 		Delimiter = { fg = c.ash_grey }, --  character that needs attention
 		Debug = { fg = c.red }, --    debugging statements
 		Bold = { bold = true },

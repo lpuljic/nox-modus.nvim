@@ -29,9 +29,10 @@ function M.highlight(c)
 		["@string.regex"] = { link = "Constant" },
 		["@string.escape"] = { link = "Constant" },
 		["@string.special"] = { link = "Contstant" },
+		["@string.yaml"] = { fg = c.base },
 
 		-- Types
-		["@property"] = { fg = c.monsoon },
+		["@property"] = { link = "Property" },
 		["@type.builtin"] = { fg = c.grey_chateau, bold = true },
 
 		-- Functions
