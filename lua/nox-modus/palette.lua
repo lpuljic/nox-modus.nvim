@@ -2,7 +2,7 @@ local colors = {
 
 	bg = "#111111", -- 68
 	base = "#e4e4e4", -- 36
-	dark = "#232323",
+	dark = "#151515",
 	dawn = "#a0a0a0", -- 5
 	ash_grey = "#b6b6b5", -- 16
 	gravel = "#494949", -- 17

@@ -18,7 +18,7 @@ function M.highlight(c)
 		-- Markdown
 		markdownCode = { fg = c.mocha },
 		markdownCodeBlock = { fg = c.gravel },
-		RenderMarkdownCode = { bg = c.zeus },
+		RenderMarkdownCode = { bg = c.dark },
 		markdownCodeDelimiter = { fg = c.base },
 		markdownBlockquote = { fg = c.mocha },
 		markdownH1 = { fg = c.base, bold = true },

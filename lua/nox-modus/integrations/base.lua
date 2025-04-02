@@ -58,7 +58,7 @@ function M.highlight(c)
 		FoldColumn = { fg = c.dawn }, -- 'foldcolumn'
 		Whitespace = { fg = c.base }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
 		NormalFloat = { fg = "NONE" }, -- Normal text in floating windows.
-		FloatBorder = { fg = c.ash_grey, bg = c.bg },
+		FloatBorder = { fg = c.gravel },
 		QuickFixLine = { bg = c.gravel }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
 		qfFileName = { fg = c.base },
 		qfLineNr = { fg = c.sunglow },
