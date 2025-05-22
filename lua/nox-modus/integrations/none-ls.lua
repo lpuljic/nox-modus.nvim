@@ -14,10 +14,10 @@ local M = {}
 --    n: nocombine
 
 function M.highlight(c)
-	return {
-		-- nvimtools/none-ls.nvim
-		NullLsInfoBorder = { fg = c.ash_grey },
-	}
+  return {
+    -- nvimtools/none-ls.nvim
+    NullLsInfoBorder = { fg = c.ash_grey },
+  }
 end
 
 return M

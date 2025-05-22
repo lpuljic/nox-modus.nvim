@@ -29,7 +29,7 @@ function M.highlight(c)
 		["@string.regex"] = { link = "Constant" },
 		["@string.escape"] = { link = "Constant" },
 		["@string.special"] = { link = "Contstant" },
-		["@string.yaml"] = { fg = c.base },
+		--		["@string.yaml"] = { fg = c.base }, -- Not sure why I did this, this will change yaml value colour. e.g    targetRevision: main (main is string colour)
 
 		-- Types
 		["@property"] = { link = "Property" },

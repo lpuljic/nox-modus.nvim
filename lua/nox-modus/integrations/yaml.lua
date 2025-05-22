@@ -14,12 +14,12 @@ local M = {}
 --    n: nocombine
 
 function M.highlight(c)
-	return {
-		-- yamls
-		yamlBlockScalarHeader = { fg = c.cascade },
-		yamlFlowIndicator = { fg = c.cascade },
-		yamlBlockMappingDelimiter = { fg = c.cascade },
-	}
+  return {
+    -- yamls
+    yamlBlockScalarHeader = { fg = c.cascade },
+    yamlFlowIndicator = { fg = c.cascade },
+    yamlBlockMappingDelimiter = { fg = c.cascade },
+  }
 end
 
 return M

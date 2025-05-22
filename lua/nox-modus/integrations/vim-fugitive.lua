@@ -14,20 +14,20 @@ local M = {}
 --    n: nocombine
 
 function M.highlight(c)
-	return {
-		-- tpope/vim-fugitive
-		fugitiveHeading = { fg = c.grey_chateau },
-		fugitiveCount = { fg = c.sunglow },
-		fugitiveHash = { link = "Label" },
-		fugitiveStagedHeading = { fg = c.grey_chateau, bold = true },
-		fugitiveUnstagedHeading = { fg = c.grey_chateau, bold = true },
-		fugitiveStagedSection = { fg = c.olivine },
-		fugitiveStagedModifier = { fg = c.sunglow },
-		fugitiveUnstagedModifier = { fg = c.sunglow },
-		gitCommitSummary = { fg = c.base, bg = c.bg, bold = true },
-		gitCommitSelectedFile = { fg = c.cascade, bg = c.bg, italic = true },
-		gitcommitOverflow = { fg = c.sunglow },
-	}
+  return {
+    -- tpope/vim-fugitive
+    fugitiveHeading = { fg = c.grey_chateau },
+    fugitiveCount = { fg = c.sunglow },
+    fugitiveHash = { link = "Label" },
+    fugitiveStagedHeading = { fg = c.grey_chateau, bold = true },
+    fugitiveUnstagedHeading = { fg = c.grey_chateau, bold = true },
+    fugitiveStagedSection = { fg = c.olivine },
+    fugitiveStagedModifier = { fg = c.sunglow },
+    fugitiveUnstagedModifier = { fg = c.sunglow },
+    gitCommitSummary = { fg = c.base, bg = c.bg, bold = true },
+    gitCommitSelectedFile = { fg = c.cascade, bg = c.bg, italic = true },
+    gitcommitOverflow = { fg = c.sunglow },
+  }
 end
 
 return M

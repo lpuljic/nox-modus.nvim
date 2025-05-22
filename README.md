@@ -6,6 +6,7 @@ logo here
 </div>
 
 ---
+
 <div align="center"><p>
     <a href="https://github.com/lpuljic/nox-modus.nvim/pulse">
       <img alt="Last commit" src="https://img.shields.io/github/last-commit/lpuljic/nox-modus.nvim?style=for-the-badge&logo=starship&color=98c379&logoColor=D9E0EE&labelColor=302D41"/>
@@ -16,10 +17,10 @@ logo here
 </div>
 
 ![Preview](./image/nox-modus.png)
+
 # nox-modus
 
 nox-modus is inspired monotone theme, hence the name `nox` `modus`, meaning `night mode` in Latin.
-
 
 <details>
 <summary><h2>🎨 Palette</h2></summary>
@@ -132,10 +133,6 @@ nox-modus is inspired monotone theme, hence the name `nox` `modus`, meaning `nig
 
 </details>
 
-
-
-
-
 ## Install
 
 [packer](https://github.com/wbthomason/packer.nvim)
@@ -163,5 +160,3 @@ Add this somewhere in your configuration.
 ```lua
 vim.cmd.colorscheme("nox-modus")
 ```
-
-

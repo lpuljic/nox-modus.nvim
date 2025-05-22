@@ -14,10 +14,10 @@ local M = {}
 --    n: nocombine
 
 function M.highlight(c)
-	return {
-		-- semantic_tokens
-		["@lsp.type.property"] = { fg = c.base },
-	}
+  return {
+    -- semantic_tokens
+    ["@lsp.type.property"] = { fg = c.base },
+  }
 end
 
 return M

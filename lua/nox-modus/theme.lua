@@ -1,34 +1,34 @@
 local M = {}
 
 function M.setup()
-	if vim.g.colors_name then
-		vim.cmd("hi clear")
-	end
+  if vim.g.colors_name then
+    vim.cmd("hi clear")
+  end
 
-	if vim.fn.exists("syntax_on") then
-		vim.api.nvim_command("syntax reset")
-	end
+  if vim.fn.exists("syntax_on") then
+    vim.api.nvim_command("syntax reset")
+  end
 
-	vim.o.background = "dark"
-	vim.o.termguicolors = true
-	vim.g.colors_name = "nox-modus"
+  vim.o.background = "dark"
+  vim.o.termguicolors = true
+  vim.g.colors_name = "nox-modus"
 
-	local palette = require("nox-modus.palette")
-	local util = require("nox-modus.util")
-	local integrations = require("nox-modus.integrations")
+  local palette = require("nox-modus.palette")
+  local util = require("nox-modus.util")
+  local integrations = require("nox-modus.integrations")
 
-	-- Integrate with other plugins
-	for _, integration in ipairs(integrations) do
-		local highlightedGroup = integration.highlight(palette)
-		util.initialise(highlightedGroup)
-	end
+  -- Integrate with other plugins
+  for _, integration in ipairs(integrations) do
+    local highlightedGroup = integration.highlight(palette)
+    util.initialise(highlightedGroup)
+  end
 
-	-- Hide all semantic highlights.
-	for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
-		vim.api.nvim_set_hl(0, group, {})
-	end
+  -- Hide all semantic highlights.
+  for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
+    vim.api.nvim_set_hl(0, group, {})
+  end
 
-	-- print(vim.inspect(integrations))
+  -- print(vim.inspect(integrations))
 end
 
 return M
