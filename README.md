@@ -29,38 +29,39 @@ nox-modus is inspired monotone theme, hence the name `nox` `modus`, meaning `nig
   <thead>
     <tr>
       <th>Name</th>
-      <th>Color</th>
       <th>Hex</th>
+      <th>Color</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>bg</td><td style="background:#111111;width:60px;"></td><td>#111111</td></tr>
-    <tr><td>base</td><td style="background:#e4e4e4;width:60px;"></td><td>#e4e4e4</td></tr>
-    <tr><td>dark</td><td style="background:#151515;width:60px;"></td><td>#151515</td></tr>
-    <tr><td>dawn</td><td style="background:#a0a0a0;width:60px;"></td><td>#a0a0a0</td></tr>
-    <tr><td>ash_grey</td><td style="background:#b6b6b5;width:60px;"></td><td>#b6b6b5</td></tr>
-    <tr><td>gravel</td><td style="background:#494949;width:60px;"></td><td>#494949</td></tr>
-    <tr><td>warm_grey</td><td style="background:#8c8c8c;width:60px;"></td><td>#666666</td></tr>
-    <tr><td>cascade</td><td style="background:#88afa2;width:60px;"></td><td>#88afa2</td></tr>
-    <tr><td>monsoon</td><td style="background:#719597;width:60px;"></td><td>#719597</td></tr>
-    <tr><td>olivine</td><td style="background:#97BC62;width:60px;"></td><td>#97BC62</td></tr>
-    <tr><td>aluminium</td><td style="background:#AbAbAf;width:60px;"></td><td>#AbAbAf</td></tr>
-    <tr><td>gun_powder</td><td style="background:#415062;width:60px;"></td><td>#415062</td></tr>
-    <tr><td>grey_chateau</td><td style="background:#96a6c8;width:60px;"></td><td>#96a6c8</td></tr>
-    <tr><td>zeus</td><td style="background:#232323;width:60px;"></td><td>#232323</td></tr>
-    <tr><td>celestial_blue</td><td style="background:#569CD6;width:60px;"></td><td>#569CD6</td></tr>
-    <tr><td>purple</td><td style="background:#B180D7;width:60px;"></td><td>#B180D7</td></tr>
-    <tr><td>red</td><td style="background:#da3633;width:60px;"></td><td>#da3633</td></tr>
-    <tr><td>mocha</td><td style="background:#A47663;width:60px;"></td><td>#A47663</td></tr>
-    <tr><td>orange</td><td style="background:#F3701E;width:60px;"></td><td>#F3701E</td></tr>
-    <tr><td>sunglow</td><td style="background:#FAC03B;width:60px;"></td><td>#FAC03B</td></tr>
-    <tr><td>golden_glow</td><td style="background:#FCE094;width:60px;"></td><td>#FCE094</td></tr>
-    <tr><td>git.DiffAdd</td><td style="background:#294841;width:60px;"></td><td>#294841</td></tr>
-    <tr><td>git.DiffDelete</td><td style="background:#6A2835;width:60px;"></td><td>#6A2835</td></tr>
-    <tr><td>git.DiffChange</td><td style="background:#49423C;width:60px;"></td><td>#49423C</td></tr>
-    <tr><td>git.DiffText</td><td style="background:#C5630C;width:60px;"></td><td>#C5630C</td></tr>
-    <tr><td>diagnostics.DiagnosticError</td><td style="background:#be7c7d;width:60px;"></td><td>#be7c7d</td></tr>
-    <tr><td>diagnostics.DiagnosticWarn</td><td style="background:#aa8a69;width:60px;"></td><td>#aa8a69</td></tr>
+    <tr><td><strong>bg</strong></td><td><code>#111111</code></td><td style="background:#111111;width:60px;"></td></tr>
+    <tr><td><strong>base</strong></td><td><code>#e4e4e4</code></td><td style="background:#e4e4e4;width:60px;"></td></tr>
+    <tr><td><strong>dark</strong></td><td><code>#151515</code></td><td style="background:#151515;width:60px;"></td></tr>
+    <tr><td><strong>dawn</strong></td><td><code>#a0a0a0</code></td><td style="background:#a0a0a0;width:60px;"></td></tr>
+    <tr><td><strong>ash_grey</strong></td><td><code>#b6b6b5</code></td><td style="background:#b6b6b5;width:60px;"></td></tr>
+    <tr><td><strong>gravel</strong></td><td><code>#494949</code></td><td style="background:#494949;width:60px;"></td></tr>
+    <tr><td><strong>warm_grey</strong></td><td><code>#8c8c8c</code></td><td style="background:#8c8c8c;width:60px;"></td></tr>
+    <tr><td><strong>storm_dust</strong></td><td><code>#666666</code></td><td style="background:#666666;width:60px;"></td></tr>
+    <tr><td><strong>cascade</strong></td><td><code>#88afa2</code></td><td style="background:#88afa2;width:60px;"></td></tr>
+    <tr><td><strong>monsoon</strong></td><td><code>#719597</code></td><td style="background:#719597;width:60px;"></td></tr>
+    <tr><td><strong>olivine</strong></td><td><code>#97BC62</code></td><td style="background:#97BC62;width:60px;"></td></tr>
+    <tr><td><strong>aluminium</strong></td><td><code>#AbAbAf</code></td><td style="background:#AbAbAf;width:60px;"></td></tr>
+    <tr><td><strong>gun_powder</strong></td><td><code>#415062</code></td><td style="background:#415062;width:60px;"></td></tr>
+    <tr><td><strong>grey_chateau</strong></td><td><code>#96a6c8</code></td><td style="background:#96a6c8;width:60px;"></td></tr>
+    <tr><td><strong>zeus</strong></td><td><code>#232323</code></td><td style="background:#232323;width:60px;"></td></tr>
+    <tr><td><strong>celestial_blue</strong></td><td><code>#569CD6</code></td><td style="background:#569CD6;width:60px;"></td></tr>
+    <tr><td><strong>purple</strong></td><td><code>#B180D7</code></td><td style="background:#B180D7;width:60px;"></td></tr>
+    <tr><td><strong>red</strong></td><td><code>#da3633</code></td><td style="background:#da3633;width:60px;"></td></tr>
+    <tr><td><strong>mocha</strong></td><td><code>#A47663</code></td><td style="background:#A47663;width:60px;"></td></tr>
+    <tr><td><strong>orange</strong></td><td><code>#F3701E</code></td><td style="background:#F3701E;width:60px;"></td></tr>
+    <tr><td><strong>sunglow</strong></td><td><code>#FAC03B</code></td><td style="background:#FAC03B;width:60px;"></td></tr>
+    <tr><td><strong>golden_glow</strong></td><td><code>#FCE094</code></td><td style="background:#FCE094;width:60px;"></td></tr>
+    <tr><td><strong>git.DiffAdd</strong></td><td><code>#294841</code></td><td style="background:#294841;width:60px;"></td></tr>
+    <tr><td><strong>git.DiffDelete</strong></td><td><code>#6A2835</code></td><td style="background:#6A2835;width:60px;"></td></tr>
+    <tr><td><strong>git.DiffChange</strong></td><td><code>#49423C</code></td><td style="background:#49423C;width:60px;"></td></tr>
+    <tr><td><strong>git.DiffText</strong></td><td><code>#C5630C</code></td><td style="background:#C5630C;width:60px;"></td></tr>
+    <tr><td><strong>diagnostics.DiagnosticError</strong></td><td><code>#be7c7d</code></td><td style="background:#be7c7d;width:60px;"></td></tr>
+    <tr><td><strong>diagnostics.DiagnosticWarn</strong></td><td><code>#aa8a69</code></td><td style="background:#aa8a69;width:60px;"></td></tr>
   </tbody>
 </table>
 
