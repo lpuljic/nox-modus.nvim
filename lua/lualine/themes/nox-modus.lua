@@ -2,6 +2,8 @@
 local colors = {
   gray05 = "#4a4a4a",
   bg = "#303030",
+    fg = "#e4e4e4",      -- Add this
+  grey01 = "#b6b6b5",  -- Add this
 }
 
 return {
