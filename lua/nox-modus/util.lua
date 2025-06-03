@@ -28,6 +28,11 @@ end
 ---@param alpha number: A blending factor, between `0` and `1`.
 ---@return string hex: A blended hex color code of the format `#rrggbb`
 function util.blend(fg, bg, alpha)
+  -- Clamp alpha between 0 and 1
+  alpha = math.max(0, math.min(1, alpha))
+  if alpha == 0 then return fg end
+  if alpha == 1 then return bg end
+
   local bg_rgb = hexToRgb(bg)
   local fg_rgb = hexToRgb(fg)
   if not bg_rgb or not fg_rgb then
@@ -39,7 +44,8 @@ function util.blend(fg, bg, alpha)
     return math.floor(math.min(math.max(0, ret), 255) + 0.5)
   end
 
-  return string.format("#%02X%02X%02X", blendChannel(1), blendChannel(2), blendChannel(3))
+  -- Output lowercase hex for consistency
+  return string.format("#%02x%02x%02x", blendChannel(1), blendChannel(2), blendChannel(3))
 end
 
 return util
