@@ -1,17 +1,20 @@
 local M = {}
 
 function M.setup()
-  if vim.g.colors_name then
-    vim.cmd("hi clear")
-  end
+  -- Only clear highlights and reset syntax if not already set to nox-modus
+  if vim.g.colors_name ~= "nox-modus" then
+    if vim.g.colors_name then
+      vim.cmd("hi clear")
+    end
 
-  if vim.fn.exists("syntax_on") then
-    vim.api.nvim_command("syntax reset")
-  end
+    if vim.fn.exists("syntax_on") then
+      vim.api.nvim_command("syntax reset")
+    end
 
-  vim.o.background = "dark"
-  vim.o.termguicolors = true
-  vim.g.colors_name = "nox-modus"
+    vim.o.background = "dark"
+    vim.o.termguicolors = true
+    vim.g.colors_name = "nox-modus"
+  end
 
   local palette = require("nox-modus.palette")
   local util = require("nox-modus.util")
