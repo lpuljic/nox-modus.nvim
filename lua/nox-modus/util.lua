@@ -12,10 +12,13 @@ end
 
 ---Converts a hex color code string to a table of integer values
 ---@param hex_str string: Hex color code of the format `#rrggbb`
----@return table rgb: Table of {r, g, b} integers
+---@return table|nil rgb: Table of {r, g, b} integers or nil if invalid
 local function hexToRgb(hex_str)
   local r, g, b = string.match(hex_str, "^#(%x%x)(%x%x)(%x%x)")
-  assert(r, "Invalid hex string: " .. hex_str)
+  if not r then
+    vim.notify("nox-modus: Invalid hex string: " .. tostring(hex_str), vim.log.levels.WARN)
+    return nil
+  end
   return { tonumber(r, 16), tonumber(g, 16), tonumber(b, 16) }
 end
 
@@ -27,6 +30,9 @@ end
 function util.blend(fg, bg, alpha)
   local bg_rgb = hexToRgb(bg)
   local fg_rgb = hexToRgb(fg)
+  if not bg_rgb or not fg_rgb then
+    return fg -- fallback to fg if invalid color
+  end
 
   local blendChannel = function(i)
     local ret = ((1 - alpha) * fg_rgb[i] + (alpha * bg_rgb[i]))
