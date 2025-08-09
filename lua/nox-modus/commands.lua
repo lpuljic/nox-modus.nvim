@@ -108,14 +108,7 @@ function M.show_config_info()
     table.insert(lines, "")
   end
 
-  -- Plugin settings
-  if next(config.plugins) then
-    table.insert(lines, "## Plugin Settings")
-    for plugin, enabled in pairs(config.plugins) do
-      table.insert(lines, string.format("%-20s %s", plugin, tostring(enabled)))
-    end
-    table.insert(lines, "")
-  end
+
 
   -- Usage examples
   table.insert(lines, "## Usage Examples")
@@ -126,14 +119,6 @@ function M.show_config_info()
   table.insert(lines, "  palette_override = {")
   table.insert(lines, '    bg = "#000000",')
   table.insert(lines, '    red = "#ff0000"')
-  table.insert(lines, "  }")
-  table.insert(lines, "})")
-  table.insert(lines, "")
-  table.insert(lines, "-- Disable specific plugins")
-  table.insert(lines, 'require("nox-modus").setup({')
-  table.insert(lines, "  plugins = {")
-  table.insert(lines, '    ["nvim-cmp"] = false,')
-  table.insert(lines, '    ["nvim-tree"] = true')
   table.insert(lines, "  }")
   table.insert(lines, "})")
   table.insert(lines, "```")

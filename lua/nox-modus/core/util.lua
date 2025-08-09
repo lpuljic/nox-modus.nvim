@@ -35,17 +35,6 @@ function util.is_valid_hex(hex)
   return hex:match("^#[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]$") ~= nil
 end
 
--- Helper functions for declarative highlight definitions
-function util.fg(name, color, opts)
-  opts = opts or {}
-  opts.fg = color
-  return { [name] = opts }
-end
-
-function util.link(name, target)
-  return { [name] = { link = target } }
-end
-
 ---Converts a hex color code string to a table of integer values
 ---@param hex_str string: Hex color code of the format `#rrggbb`
 ---@return table|nil rgb: Table of {r, g, b} integers or nil if invalid
@@ -90,12 +79,12 @@ function util.clear_semantic_highlights()
   if not vim.lsp or not vim.lsp.start_client then
     return
   end
-  
+
   -- Cache the list of semantic groups to avoid repeated getcompletion calls
   if not semantic_groups_cache then
     semantic_groups_cache = vim.fn.getcompletion("@lsp", "highlight")
   end
-  
+
   for _, group in ipairs(semantic_groups_cache) do
     vim.api.nvim_set_hl(0, group, {})
   end
@@ -106,7 +95,7 @@ function util.apply_terminal_colors(colors)
   if not colors.terminal then
     return
   end
-  
+
   for name, color in pairs(colors.terminal) do
     vim.g[name] = color
   end

@@ -114,21 +114,16 @@ require("nox-modus").setup({
   palette_override = {
     bg = "#000000",
     red = "#ff0000"
-  },
-  plugins = {
-    ["nvim-cmp"] = false,
-    ["nvim-tree"] = true
   }
 })
 ```
 
 #### Configuration Options
 
-| Option                      | Type      | Default | Description                                 |
-| --------------------------- | --------- | ------- | ------------------------------------------- |
-| `clear_semantic_highlights` | `boolean` | `true`  | Clear semantic highlights from LSP          |
-| `palette_override`          | `table`   | `{}`    | Override specific colors in the palette     |
-| `plugins`                   | `table`   | `{}`    | Enable/disable specific plugin integrations |
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `clear_semantic_highlights` | `boolean` | `true` | Clear semantic highlights from LSP |
+| `palette_override` | `table` | `{}` | Override specific colors in the palette |
 
 #### 🔧 Extended API
 
@@ -160,9 +155,9 @@ local config = require("nox-modus").get_config()
 ## ✨ Features
 
 - 🎨 **Sophisticated Color Palette** - Carefully crafted monotone design with strategic accent colors
-- 🔧 **Modular Plugin Support** - Integrations for LSP, Treesitter, Telescope, nvim-cmp, and more
-- ⚡ **Performance Optimized** - Batched highlight application and lazy plugin loading
-- 🎛️ **Highly Customizable** - Runtime palette modification and plugin control
+- 🔧 **Comprehensive Plugin Support** - Integrations for LSP, Treesitter, Telescope, nvim-cmp, and more
+- ⚡ **Performance Optimized** - Batched highlight application for fast loading
+- 🎛️ **Highly Customizable** - Runtime palette modification with simple API
 - 🖥️ **Terminal Support** - Full 16-color terminal integration for `:terminal`
 - 🔍 **Built-in Inspection** - Commands to explore palette and configuration
 - 🛡️ **Robust Error Handling** - Graceful fallbacks for missing plugins
@@ -179,57 +174,34 @@ nox-modus includes dedicated support for:
 - **Status**: lualine.nvim theme included
 - **Linting**: none-ls (null-ls) support
 
-### 🤖 Automatic Plugin Detection
-
-The theme **automatically detects installed plugins** and only loads relevant integrations:
-
-- **External plugins** (nvim-cmp, telescope, etc.) - loaded only if detected
-- **Built-in features** (markdown, YAML, vimdoc) - always loaded
-- **Core highlights** (base colors) - always loaded
-
-```lua
--- Manual override examples:
-require("nox-modus").setup({
-  plugins = {
-    ["nvim-treesitter"] = false,  -- Disable even if installed
-    ["nvim-cmp"] = true,          -- Force enable even if not detected
-  }
-})
-```
-
 ### 🛠️ Adding Custom Integrations
 
 To add support for a new plugin:
 
 1. **Create integration file**: `lua/nox-modus/integrations/my-plugin.lua`
-
    ```lua
    local M = {}
-
+   
    function M.highlight(palette)
      return {
        MyPluginHighlight = { fg = palette.base, bg = palette.bg },
        -- Add more highlights...
      }
    end
-
+   
    return M
    ```
 
-2. **Register in theme.lua**: Add to the `available_integrations` table
-
+2. **Register in theme.lua**: Add to the `integration_modules` list
    ```lua
-   -- For external plugins (conditional loading):
-   { name = "my-plugin", module = "nox-modus.integrations.my-plugin", plugin = "my-plugin" },
-
-   -- For built-in features (always load):
-   { name = "my-feature", module = "nox-modus.integrations.my-feature", always_load = true },
+   local integration_modules = {
+     "nox-modus.core.base",
+     -- ... existing integrations ...
+     "nox-modus.integrations.my-plugin",  -- Add your integration here
+   }
    ```
 
-| Setting              | When It Loads           | Use For                             |
-| -------------------- | ----------------------- | ----------------------------------- |
-| `plugin = "name"`    | Only if plugin detected | External plugins users may not have |
-| `always_load = true` | Always loads            | Built-in syntax, core features      |
+All integrations are loaded unconditionally - if the target plugin isn't installed, the highlight groups simply won't be used.
 
 ## 🤝 Contributing
 
