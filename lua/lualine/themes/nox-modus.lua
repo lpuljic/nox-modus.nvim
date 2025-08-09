@@ -1,32 +1,35 @@
 -- nox-modus colorscheme for lualine.
-local colors = {
-  gray05 = "#4a4a4a",
-  bg = "#303030",
-    fg = "#e4e4e4",      -- Add this
-  grey01 = "#b6b6b5",  -- Add this
-}
+local palette = require("nox-modus.core.palette")
 
 return {
   normal = {
-    a = { fg = colors.grey01, bg = colors.bg },
-    b = { fg = colors.grey01, bg = colors.gray05 },
-    c = { fg = colors.grey01, bg = colors.bg },
+    a = { fg = palette.ash_grey, bg = palette.gravel },
+    b = { fg = palette.ash_grey, bg = palette.storm_dust },
+    c = { fg = palette.ash_grey, bg = palette.bg },
   },
   insert = {
-    a = { fg = colors.fg, bg = colors.bg, gui = "bold" },
+    a = { fg = palette.bg, bg = palette.olivine, gui = "bold" },
+    b = { fg = palette.ash_grey, bg = palette.storm_dust },
+    c = { fg = palette.ash_grey, bg = palette.bg },
   },
   visual = {
-    a = { fg = colors.fg, bg = colors.bg, gui = "bold" },
+    a = { fg = palette.bg, bg = palette.celestial_blue, gui = "bold" },
+    b = { fg = palette.ash_grey, bg = palette.storm_dust },
+    c = { fg = palette.ash_grey, bg = palette.bg },
   },
   command = {
-    a = { fg = colors.fg, bg = colors.bg, gui = "bold" },
+    a = { fg = palette.bg, bg = palette.sunglow, gui = "bold" },
+    b = { fg = palette.ash_grey, bg = palette.storm_dust },
+    c = { fg = palette.ash_grey, bg = palette.bg },
   },
   replace = {
-    a = { fg = colors.fg, bg = colors.bg, gui = "bold" },
+    a = { fg = palette.bg, bg = palette.red, gui = "bold" },
+    b = { fg = palette.ash_grey, bg = palette.storm_dust },
+    c = { fg = palette.ash_grey, bg = palette.bg },
   },
   inactive = {
-    a = { fg = colors.grey01, bg = colors.bg },
-    b = { fg = colors.grey01, bg = colors.bg },
-    c = { fg = colors.grey01, bg = colors.bg },
+    a = { fg = palette.warm_grey, bg = palette.bg },
+    b = { fg = palette.warm_grey, bg = palette.bg },
+    c = { fg = palette.warm_grey, bg = palette.bg },
   },
 }

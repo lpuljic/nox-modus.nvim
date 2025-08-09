@@ -1,26 +1,17 @@
 <div align="center">
 
-#![logo]()
-logo here
+# nox-modus.nvim
 
-</div>
+*A sophisticated monotone dark theme for Neovim*
 
----
-
-<div align="center"><p>
-    <a href="https://github.com/lpuljic/nox-modus.nvim/pulse">
-      <img alt="Last commit" src="https://img.shields.io/github/last-commit/lpuljic/nox-modus.nvim?style=for-the-badge&logo=starship&color=98c379&logoColor=D9E0EE&labelColor=302D41"/>
-    </a>
-    <a href="https://github.com/lpuljic/nox-modus.nvim/stargazers">
-      <img alt="Stars" src="https://img.shields.io/github/stars/lpuljic/nox-modus.nvim?style=for-the-badge&logo=starship&color=c678dd&logoColor=D9E0EE&labelColor=302D41" />
-    </a>
-</div>
+[![Last commit](https://img.shields.io/github/last-commit/lpuljic/nox-modus.nvim?style=for-the-badge&logo=starship&color=88afa2&logoColor=e4e4e4&labelColor=232323)](https://github.com/lpuljic/nox-modus.nvim/pulse)
+[![Stars](https://img.shields.io/github/stars/lpuljic/nox-modus.nvim?style=for-the-badge&logo=starship&color=569cd6&logoColor=e4e4e4&labelColor=232323)](https://github.com/lpuljic/nox-modus.nvim/stargazers)
 
 ![Preview](./image/nox-modus.png)
 
-# nox-modus
+</div>
 
-nox-modus is inspired monotone theme, hence the name `nox` `modus`, meaning `night mode` in Latin.
+**nox-modus** is an inspired monotone theme with carefully selected accent colors. The name derives from Latin *"nox modus"* meaning *"night mode"*, reflecting its dark, elegant aesthetic designed for extended coding sessions.
 
 <details>
 <summary><h2>🎨 Palette</h2></summary>
@@ -44,22 +35,22 @@ nox-modus is inspired monotone theme, hence the name `nox` `modus`, meaning `nig
     <tr><td><strong>storm_dust</strong></td><td><code>#666666</code></td><td style="background:#666666;width:60px;"></td></tr>
     <tr><td><strong>cascade</strong></td><td><code>#88afa2</code></td><td style="background:#88afa2;width:60px;"></td></tr>
     <tr><td><strong>monsoon</strong></td><td><code>#719597</code></td><td style="background:#719597;width:60px;"></td></tr>
-    <tr><td><strong>olivine</strong></td><td><code>#97BC62</code></td><td style="background:#97BC62;width:60px;"></td></tr>
-    <tr><td><strong>aluminium</strong></td><td><code>#AbAbAf</code></td><td style="background:#AbAbAf;width:60px;"></td></tr>
+    <tr><td><strong>olivine</strong></td><td><code>#97bc62</code></td><td style="background:#97bc62;width:60px;"></td></tr>
+    <tr><td><strong>aluminium</strong></td><td><code>#ababaf</code></td><td style="background:#ababaf;width:60px;"></td></tr>
     <tr><td><strong>gun_powder</strong></td><td><code>#415062</code></td><td style="background:#415062;width:60px;"></td></tr>
     <tr><td><strong>grey_chateau</strong></td><td><code>#96a6c8</code></td><td style="background:#96a6c8;width:60px;"></td></tr>
     <tr><td><strong>zeus</strong></td><td><code>#232323</code></td><td style="background:#232323;width:60px;"></td></tr>
-    <tr><td><strong>celestial_blue</strong></td><td><code>#569CD6</code></td><td style="background:#569CD6;width:60px;"></td></tr>
-    <tr><td><strong>purple</strong></td><td><code>#B180D7</code></td><td style="background:#B180D7;width:60px;"></td></tr>
+    <tr><td><strong>celestial_blue</strong></td><td><code>#569cd6</code></td><td style="background:#569cd6;width:60px;"></td></tr>
+    <tr><td><strong>purple</strong></td><td><code>#b180d7</code></td><td style="background:#b180d7;width:60px;"></td></tr>
     <tr><td><strong>red</strong></td><td><code>#da3633</code></td><td style="background:#da3633;width:60px;"></td></tr>
-    <tr><td><strong>mocha</strong></td><td><code>#A47663</code></td><td style="background:#A47663;width:60px;"></td></tr>
-    <tr><td><strong>orange</strong></td><td><code>#F3701E</code></td><td style="background:#F3701E;width:60px;"></td></tr>
-    <tr><td><strong>sunglow</strong></td><td><code>#FAC03B</code></td><td style="background:#FAC03B;width:60px;"></td></tr>
-    <tr><td><strong>golden_glow</strong></td><td><code>#FCE094</code></td><td style="background:#FCE094;width:60px;"></td></tr>
+    <tr><td><strong>mocha</strong></td><td><code>#a47663</code></td><td style="background:#a47663;width:60px;"></td></tr>
+    <tr><td><strong>orange</strong></td><td><code>#f3701e</code></td><td style="background:#f3701e;width:60px;"></td></tr>
+    <tr><td><strong>sunglow</strong></td><td><code>#fac03b</code></td><td style="background:#fac03b;width:60px;"></td></tr>
+    <tr><td><strong>golden_glow</strong></td><td><code>#fce094</code></td><td style="background:#fce094;width:60px;"></td></tr>
     <tr><td><strong>git.DiffAdd</strong></td><td><code>#294841</code></td><td style="background:#294841;width:60px;"></td></tr>
-    <tr><td><strong>git.DiffDelete</strong></td><td><code>#6A2835</code></td><td style="background:#6A2835;width:60px;"></td></tr>
-    <tr><td><strong>git.DiffChange</strong></td><td><code>#49423C</code></td><td style="background:#49423C;width:60px;"></td></tr>
-    <tr><td><strong>git.DiffText</strong></td><td><code>#C5630C</code></td><td style="background:#C5630C;width:60px;"></td></tr>
+    <tr><td><strong>git.DiffDelete</strong></td><td><code>#6a2835</code></td><td style="background:#6a2835;width:60px;"></td></tr>
+    <tr><td><strong>git.DiffChange</strong></td><td><code>#49423c</code></td><td style="background:#49423c;width:60px;"></td></tr>
+    <tr><td><strong>git.DiffText</strong></td><td><code>#c5630c</code></td><td style="background:#c5630c;width:60px;"></td></tr>
     <tr><td><strong>diagnostics.DiagnosticError</strong></td><td><code>#be7c7d</code></td><td style="background:#be7c7d;width:60px;"></td></tr>
     <tr><td><strong>diagnostics.DiagnosticWarn</strong></td><td><code>#aa8a69</code></td><td style="background:#aa8a69;width:60px;"></td></tr>
   </tbody>
@@ -67,55 +58,141 @@ nox-modus is inspired monotone theme, hence the name `nox` `modus`, meaning `nig
 
 </details>
 
-## Install
+## 📦 Installation
 
-[packer](https://github.com/wbthomason/packer.nvim)
+### [lazy.nvim](https://github.com/folke/lazy.nvim) (recommended)
 
 ```lua
-use "lpuljic/nox-modus.nvim"
+{
+  "lpuljic/nox-modus.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    vim.cmd.colorscheme("nox-modus")
+  end,
+}
 ```
 
-[vim-plug](https://github.com/junegunn/vim-plug)
+### [packer.nvim](https://github.com/wbthomason/packer.nvim)
+
+```lua
+use {
+  "lpuljic/nox-modus.nvim",
+  config = function()
+    vim.cmd.colorscheme("nox-modus")
+  end
+}
+```
+
+### [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
 Plug 'lpuljic/nox-modus.nvim'
 ```
 
-[lazy](https://github.com/folke/lazy.nvim)
+### Manual
 
-```lua
-{ "lpuljic/nox-modus.nvim" }
+```bash
+git clone https://github.com/lpuljic/nox-modus.nvim ~/.local/share/nvim/site/pack/plugins/start/nox-modus.nvim
 ```
 
-## Configuration
+## ⚙️ Configuration
 
-Add this somewhere in your configuration.
+### Basic Usage
 
 ```lua
 vim.cmd.colorscheme("nox-modus")
 ```
 
-### Advanced: Options
+### Advanced Configuration
 
-You can pass options to the theme setup function for more control. For example, to disable clearing of semantic highlights:
+You can pass options to the theme setup function for more control:
 
 ```lua
 require("nox-modus").setup({
   clear_semantic_highlights = false,
+  palette_override = {
+    bg = "#000000",
+    red = "#ff0000"
+  },
+  plugins = {
+    ["nvim-cmp"] = false,
+    ["nvim-tree"] = true
+  }
 })
 ```
 
-#### Available Options
-- `clear_semantic_highlights` (default: `true`): If set to `false`, semantic highlights from LSP will not be cleared by the theme.
+#### Configuration Options
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `clear_semantic_highlights` | `boolean` | `true` | Clear semantic highlights from LSP |
+| `palette_override` | `table` | `{}` | Override specific colors in the palette |
+| `plugins` | `table` | `{}` | Enable/disable specific plugin integrations |
+
+#### 🔧 Extended API
+
+```lua
+-- Reload theme with current configuration
+require("nox-modus").reload()
+
+-- Extend palette at runtime
+require("nox-modus").extend_palette({ bg = "#000000" })
+
+-- Get current palette for inspection
+local palette = require("nox-modus").get_palette()
+
+-- Get current configuration
+local config = require("nox-modus").get_config()
+```
+
+#### 💬 Built-in Commands
+
+| Command | Description |
+|---------|-------------|
+| `:NoxModusInfo` | Show color palette information |
+| `:NoxModusInfo config` | Show current configuration and usage examples |
+| `:NoxModusPalette` | Show color palette (alias for `:NoxModusInfo`) |
+| `:NoxModusConfig` | Show configuration (alias for `:NoxModusInfo config`) |
+
+> **Tip**: Press `q` or `<Esc>` to close the info windows
+
+## ✨ Features
+
+- 🎨 **Sophisticated Color Palette** - Carefully crafted monotone design with strategic accent colors
+- 🔧 **Modular Plugin Support** - Integrations for LSP, Treesitter, Telescope, nvim-cmp, and more
+- ⚡ **Performance Optimized** - Batched highlight application and lazy plugin loading
+- 🎛️ **Highly Customizable** - Runtime palette modification and plugin control
+- 🖥️ **Terminal Support** - Full 16-color terminal integration for `:terminal`
+- 🔍 **Built-in Inspection** - Commands to explore palette and configuration
+- 🛡️ **Robust Error Handling** - Graceful fallbacks for missing plugins
+- 📦 **Zero Dependencies** - Lightweight and self-contained
+
+## 🔌 Plugin Integrations
+
+nox-modus includes dedicated support for:
+
+- **LSP**: nvim-lspconfig, diagnostics, semantic tokens
+- **Syntax**: nvim-treesitter, markdown, YAML, vimdoc
+- **Git**: gitsigns, vim-fugitive, diff highlighting
+- **UI**: nvim-cmp, nvim-tree, telescope.nvim
+- **Status**: lualine.nvim theme included
+- **Linting**: none-ls (null-ls) support
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit issues and pull requests.
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## Features
-- Modular plugin integrations (LSP, Treesitter, Telescope, etc.)
-- Palette-based color management
-- Robust error handling for integrations
-- Performance optimizations (avoids unnecessary highlight clearing)
+<div align="center">
 
----
+*Built with ❤️ for the Neovim community*
 
-For more details, see the source code and comments in the `lua/nox-modus/` directory.
+**[⭐ Star this repo](https://github.com/lpuljic/nox-modus.nvim) • [🐛 Report issues](https://github.com/lpuljic/nox-modus.nvim/issues) • [💡 Request features](https://github.com/lpuljic/nox-modus.nvim/issues/new)**
+
+</div>

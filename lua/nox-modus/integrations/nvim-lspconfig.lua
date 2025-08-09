@@ -1,4 +1,4 @@
-local util = require("nox-modus.util")
+local util = require("nox-modus.core.util")
 local M = {}
 --Style Options:
 --
