@@ -4,51 +4,33 @@ local M = {}
 local config = {
   clear_semantic_highlights = true,
   palette_override = {},
-  plugins = {},
 }
 
--- Plugin detection helper
-local function has_plugin(plugin_name)
-  return package.loaded[plugin_name] ~= nil or vim.fn.exists("g:loaded_" .. plugin_name:gsub("[^%w]", "_")) == 1
-end
-
--- Get list of available integrations with plugin detection
+-- Simple list of all integrations - just add new ones here
 local function get_integrations()
-  local available_integrations = {
-    { name = "base",            module = "nox-modus.core.base",                    always_load = true },
-    { name = "gitsigns",        module = "nox-modus.integrations.gitsigns",        plugin = "gitsigns" },
-    { name = "none-ls",         module = "nox-modus.integrations.none-ls",         plugin = "null-ls" },
-    { name = "markdown",        module = "nox-modus.integrations.markdown",        always_load = true },
-    { name = "nvim-cmp",        module = "nox-modus.integrations.nvim-cmp",        plugin = "cmp" },
-    { name = "nvim-tree",       module = "nox-modus.integrations.nvim-tree",       plugin = "nvim-tree" },
-    { name = "vim-fugitive",    module = "nox-modus.integrations.vim-fugitive",    plugin = "fugitive" },
-    { name = "nvim-telescope",  module = "nox-modus.integrations.nvim-telescope",  plugin = "telescope" },
-    { name = "nvim-treesitter", module = "nox-modus.integrations.nvim-treesitter", plugin = "nvim-treesitter" },
-    { name = "nvim-lspconfig",  module = "nox-modus.integrations.nvim-lspconfig",  plugin = "lspconfig" },
-    { name = "semantic_tokens", module = "nox-modus.integrations.semantic_tokens", always_load = true },
-    { name = "yaml",            module = "nox-modus.integrations.yaml",            always_load = true },
-    { name = "vimdoc",          module = "nox-modus.integrations.vimdoc",          always_load = true },
+  local integration_modules = {
+    "nox-modus.core.base",
+    "nox-modus.integrations.gitsigns",
+    "nox-modus.integrations.none-ls",
+    "nox-modus.integrations.markdown",
+    "nox-modus.integrations.nvim-cmp",
+    "nox-modus.integrations.nvim-tree",
+    "nox-modus.integrations.vim-fugitive",
+    "nox-modus.integrations.nvim-telescope",
+    "nox-modus.integrations.nvim-treesitter",
+    "nox-modus.integrations.nvim-lspconfig",
+    "nox-modus.integrations.semantic_tokens",
+    "nox-modus.integrations.yaml",
+    "nox-modus.integrations.vimdoc",
     -- Add new integrations here:
-    -- { name = "my-plugin",    module = "nox-modus.integrations.my-plugin",    plugin = "my-plugin" },
+    -- "nox-modus.integrations.my-plugin",
   }
 
   local integrations = {}
-  for _, integration in ipairs(available_integrations) do
-    local should_load = integration.always_load or
-        (integration.plugin and has_plugin(integration.plugin))
-
-    local user_enabled = config.plugins[integration.name]
-    if user_enabled == false then
-      should_load = false
-    elseif user_enabled == true then
-      should_load = true
-    end
-
-    if should_load then
-      local ok, module = pcall(require, integration.module)
-      if ok then
-        table.insert(integrations, module)
-      end
+  for _, module_name in ipairs(integration_modules) do
+    local ok, module = pcall(require, module_name)
+    if ok then
+      table.insert(integrations, module)
     end
   end
 
@@ -61,7 +43,6 @@ end
 -- @param opts table|nil: Optional table. Supported keys:
 --   clear_semantic_highlights (boolean): Whether to clear semantic highlights (default: true)
 --   palette_override (table): Override specific palette colors
---   plugins (table): Enable/disable specific plugin integrations
 function M.setup(opts)
   opts = opts or {}
 
@@ -71,7 +52,6 @@ function M.setup(opts)
     config.clear_semantic_highlights = true
   end
   config.palette_override = opts.palette_override or {}
-  config.plugins = opts.plugins or {}
 
   -- Only clear highlights and reset syntax if not already set to nox-modus
   if vim.g.colors_name ~= "nox-modus" then
