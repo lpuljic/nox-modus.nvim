@@ -4,35 +4,35 @@ local M = {}
 function M.show_palette_info()
   local theme = require("nox-modus.theme")
   local palette = theme.get_palette()
-  
+
   local lines = { "# nox-modus Palette", "" }
-  
+
   -- Core colors
   table.insert(lines, "## Core Colors")
   local core_colors = {
-    "bg", "base", "dark", "dawn", "ash_grey", "gravel", 
+    "bg", "base", "dark", "dawn", "ash_grey", "gravel",
     "warm_grey", "storm_dust", "cascade", "monsoon", "olivine",
     "aluminium", "gun_powder", "grey_chateau", "zeus"
   }
-  
+
   for _, color in ipairs(core_colors) do
     if palette[color] then
       table.insert(lines, string.format("%-15s %s", color, palette[color]))
     end
   end
-  
+
   table.insert(lines, "")
   table.insert(lines, "## Accent Colors")
   local accent_colors = {
     "celestial_blue", "purple", "red", "mocha", "orange", "sunglow", "golden_glow"
   }
-  
+
   for _, color in ipairs(accent_colors) do
     if palette[color] then
       table.insert(lines, string.format("%-15s %s", color, palette[color]))
     end
   end
-  
+
   -- Git colors
   if palette.git then
     table.insert(lines, "")
@@ -41,7 +41,7 @@ function M.show_palette_info()
       table.insert(lines, string.format("%-15s %s", key, value))
     end
   end
-  
+
   -- Diagnostic colors
   if palette.diagnostics then
     table.insert(lines, "")
@@ -50,7 +50,7 @@ function M.show_palette_info()
       table.insert(lines, string.format("%-15s %s", key, value))
     end
   end
-  
+
   -- Terminal colors
   if palette.terminal then
     table.insert(lines, "")
@@ -62,19 +62,19 @@ function M.show_palette_info()
       end
     end
   end
-  
+
   -- Create a new buffer with the palette information
   local buf = vim.api.nvim_create_buf(false, true)
   vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
   vim.api.nvim_buf_set_option(buf, "filetype", "markdown")
   vim.api.nvim_buf_set_option(buf, "modifiable", false)
-  
+
   -- Open the buffer in a new window
   vim.cmd("split")
   local win = vim.api.nvim_get_current_win()
   vim.api.nvim_win_set_buf(win, buf)
   vim.api.nvim_buf_set_name(buf, "nox-modus-palette")
-  
+
   -- Set buffer options
   vim.api.nvim_buf_set_keymap(buf, 'n', 'q', ':close<CR>', { noremap = true, silent = true })
   vim.api.nvim_buf_set_keymap(buf, 'n', '<Esc>', ':close<CR>', { noremap = true, silent = true })
@@ -84,14 +84,14 @@ end
 function M.show_config_info()
   local theme = require("nox-modus.theme")
   local config = theme.get_config()
-  
+
   local lines = { "# nox-modus Configuration", "" }
-  
+
   -- Current settings
   table.insert(lines, "## Current Settings")
   table.insert(lines, string.format("clear_semantic_highlights: %s", tostring(config.clear_semantic_highlights)))
   table.insert(lines, "")
-  
+
   -- Palette overrides
   if next(config.palette_override) then
     table.insert(lines, "## Palette Overrides")
@@ -107,7 +107,7 @@ function M.show_config_info()
     end
     table.insert(lines, "")
   end
-  
+
   -- Plugin settings
   if next(config.plugins) then
     table.insert(lines, "## Plugin Settings")
@@ -116,7 +116,7 @@ function M.show_config_info()
     end
     table.insert(lines, "")
   end
-  
+
   -- Usage examples
   table.insert(lines, "## Usage Examples")
   table.insert(lines, "")
@@ -137,19 +137,19 @@ function M.show_config_info()
   table.insert(lines, "  }")
   table.insert(lines, "})")
   table.insert(lines, "```")
-  
+
   -- Create a new buffer with the config information
   local buf = vim.api.nvim_create_buf(false, true)
   vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
   vim.api.nvim_buf_set_option(buf, "filetype", "markdown")
   vim.api.nvim_buf_set_option(buf, "modifiable", false)
-  
+
   -- Open the buffer in a new window
   vim.cmd("split")
   local win = vim.api.nvim_get_current_win()
   vim.api.nvim_win_set_buf(win, buf)
   vim.api.nvim_buf_set_name(buf, "nox-modus-config")
-  
+
   -- Set buffer options
   vim.api.nvim_buf_set_keymap(buf, 'n', 'q', ':close<CR>', { noremap = true, silent = true })
   vim.api.nvim_buf_set_keymap(buf, 'n', '<Esc>', ':close<CR>', { noremap = true, silent = true })
@@ -170,11 +170,11 @@ function M.setup()
     end,
     desc = "Show nox-modus palette or configuration info"
   })
-  
+
   vim.api.nvim_create_user_command("NoxModusPalette", M.show_palette_info, {
     desc = "Show nox-modus color palette"
   })
-  
+
   vim.api.nvim_create_user_command("NoxModusConfig", M.show_config_info, {
     desc = "Show nox-modus configuration"
   })

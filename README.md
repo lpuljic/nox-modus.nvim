@@ -2,7 +2,7 @@
 
 # nox-modus.nvim
 
-*A sophisticated monotone dark theme for Neovim*
+_A sophisticated monotone dark theme for Neovim_
 
 [![Last commit](https://img.shields.io/github/last-commit/lpuljic/nox-modus.nvim?style=for-the-badge&logo=starship&color=88afa2&logoColor=e4e4e4&labelColor=232323)](https://github.com/lpuljic/nox-modus.nvim/pulse)
 [![Stars](https://img.shields.io/github/stars/lpuljic/nox-modus.nvim?style=for-the-badge&logo=starship&color=569cd6&logoColor=e4e4e4&labelColor=232323)](https://github.com/lpuljic/nox-modus.nvim/stargazers)
@@ -11,7 +11,7 @@
 
 </div>
 
-**nox-modus** is an inspired monotone theme with carefully selected accent colors. The name derives from Latin *"nox modus"* meaning *"night mode"*, reflecting its dark, elegant aesthetic designed for extended coding sessions.
+**nox-modus** is an inspired monotone theme with carefully selected accent colors. The name derives from Latin _"nox modus"_ meaning _"night mode"_, reflecting its dark, elegant aesthetic designed for extended coding sessions.
 
 <details>
 <summary><h2>🎨 Palette</h2></summary>
@@ -124,11 +124,11 @@ require("nox-modus").setup({
 
 #### Configuration Options
 
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `clear_semantic_highlights` | `boolean` | `true` | Clear semantic highlights from LSP |
-| `palette_override` | `table` | `{}` | Override specific colors in the palette |
-| `plugins` | `table` | `{}` | Enable/disable specific plugin integrations |
+| Option                      | Type      | Default | Description                                 |
+| --------------------------- | --------- | ------- | ------------------------------------------- |
+| `clear_semantic_highlights` | `boolean` | `true`  | Clear semantic highlights from LSP          |
+| `palette_override`          | `table`   | `{}`    | Override specific colors in the palette     |
+| `plugins`                   | `table`   | `{}`    | Enable/disable specific plugin integrations |
 
 #### 🔧 Extended API
 
@@ -148,12 +148,12 @@ local config = require("nox-modus").get_config()
 
 #### 💬 Built-in Commands
 
-| Command | Description |
-|---------|-------------|
-| `:NoxModusInfo` | Show color palette information |
-| `:NoxModusInfo config` | Show current configuration and usage examples |
-| `:NoxModusPalette` | Show color palette (alias for `:NoxModusInfo`) |
-| `:NoxModusConfig` | Show configuration (alias for `:NoxModusInfo config`) |
+| Command                | Description                                           |
+| ---------------------- | ----------------------------------------------------- |
+| `:NoxModusInfo`        | Show color palette information                        |
+| `:NoxModusInfo config` | Show current configuration and usage examples         |
+| `:NoxModusPalette`     | Show color palette (alias for `:NoxModusInfo`)        |
+| `:NoxModusConfig`      | Show configuration (alias for `:NoxModusInfo config`) |
 
 > **Tip**: Press `q` or `<Esc>` to close the info windows
 
@@ -179,6 +179,58 @@ nox-modus includes dedicated support for:
 - **Status**: lualine.nvim theme included
 - **Linting**: none-ls (null-ls) support
 
+### 🤖 Automatic Plugin Detection
+
+The theme **automatically detects installed plugins** and only loads relevant integrations:
+
+- **External plugins** (nvim-cmp, telescope, etc.) - loaded only if detected
+- **Built-in features** (markdown, YAML, vimdoc) - always loaded
+- **Core highlights** (base colors) - always loaded
+
+```lua
+-- Manual override examples:
+require("nox-modus").setup({
+  plugins = {
+    ["nvim-treesitter"] = false,  -- Disable even if installed
+    ["nvim-cmp"] = true,          -- Force enable even if not detected
+  }
+})
+```
+
+### 🛠️ Adding Custom Integrations
+
+To add support for a new plugin:
+
+1. **Create integration file**: `lua/nox-modus/integrations/my-plugin.lua`
+
+   ```lua
+   local M = {}
+
+   function M.highlight(palette)
+     return {
+       MyPluginHighlight = { fg = palette.base, bg = palette.bg },
+       -- Add more highlights...
+     }
+   end
+
+   return M
+   ```
+
+2. **Register in theme.lua**: Add to the `available_integrations` table
+
+   ```lua
+   -- For external plugins (conditional loading):
+   { name = "my-plugin", module = "nox-modus.integrations.my-plugin", plugin = "my-plugin" },
+
+   -- For built-in features (always load):
+   { name = "my-feature", module = "nox-modus.integrations.my-feature", always_load = true },
+   ```
+
+| Setting              | When It Loads           | Use For                             |
+| -------------------- | ----------------------- | ----------------------------------- |
+| `plugin = "name"`    | Only if plugin detected | External plugins users may not have |
+| `always_load = true` | Always loads            | Built-in syntax, core features      |
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit issues and pull requests.
@@ -191,7 +243,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-*Built with ❤️ for the Neovim community*
+_Built with ❤️ for the Neovim community_
 
 **[⭐ Star this repo](https://github.com/lpuljic/nox-modus.nvim) • [🐛 Report issues](https://github.com/lpuljic/nox-modus.nvim/issues) • [💡 Request features](https://github.com/lpuljic/nox-modus.nvim/issues/new)**
 
