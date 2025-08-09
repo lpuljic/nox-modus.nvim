@@ -24,10 +24,10 @@ local colors = {
 
   -- Git diff colors
   git = {
-    DiffAdd = "#1a3328",    -- darker green for better contrast as background
-    DiffDelete = "#4a1f28", -- darker red for better contrast as background  
-    DiffChange = "#3a3429", -- darker brown for better contrast as background
-    DiffText = "#a04f0a",   -- darker orange for better contrast as background
+    DiffAdd = "#294841",    -- 2
+    DiffDelete = "#6A2835", -- 2
+    DiffChange = "#49423C", -- 2
+    DiffText = "#C5630C",   -- 2
   },
 
   -- Diagnostic colors
