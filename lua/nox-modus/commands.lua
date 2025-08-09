@@ -1,3 +1,7 @@
+-- NOTE: To Remove commands.lua completeley just remove following:
+--        1. Remove commands.lua file
+--        2. Remove the require("nox-modus.commands").setup() line from theme.lua
+
 local M = {}
 
 -- Display palette information
@@ -68,13 +72,13 @@ function M.show_palette_info()
   if existing_buf ~= -1 then
     vim.cmd("bdelete! " .. existing_buf)
   end
-  
+
   -- Create a new buffer with the palette information
   local buf = vim.api.nvim_create_buf(false, true)
   vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
   vim.api.nvim_buf_set_option(buf, "filetype", "markdown")
   vim.api.nvim_buf_set_option(buf, "modifiable", false)
-  
+
   -- Open the buffer in a new window
   vim.cmd("split")
   local win = vim.api.nvim_get_current_win()
@@ -134,13 +138,13 @@ function M.show_config_info()
   if existing_buf ~= -1 then
     vim.cmd("bdelete! " .. existing_buf)
   end
-  
+
   -- Create a new buffer with the config information
   local buf = vim.api.nvim_create_buf(false, true)
   vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
   vim.api.nvim_buf_set_option(buf, "filetype", "markdown")
   vim.api.nvim_buf_set_option(buf, "modifiable", false)
-  
+
   -- Open the buffer in a new window
   vim.cmd("split")
   local win = vim.api.nvim_get_current_win()

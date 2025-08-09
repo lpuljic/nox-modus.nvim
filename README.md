@@ -120,10 +120,10 @@ require("nox-modus").setup({
 
 #### Configuration Options
 
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `clear_semantic_highlights` | `boolean` | `true` | Clear semantic highlights from LSP |
-| `palette_override` | `table` | `{}` | Override specific colors in the palette |
+| Option                      | Type      | Default | Description                             |
+| --------------------------- | --------- | ------- | --------------------------------------- |
+| `clear_semantic_highlights` | `boolean` | `true`  | Clear semantic highlights from LSP      |
+| `palette_override`          | `table`   | `{}`    | Override specific colors in the palette |
 
 #### 🔧 Extended API
 
@@ -143,12 +143,11 @@ local config = require("nox-modus").get_config()
 
 #### 💬 Built-in Commands
 
-| Command                | Description                                           |
-| ---------------------- | ----------------------------------------------------- |
-| `:NoxModusInfo`        | Show color palette information                        |
-| `:NoxModusInfo config` | Show current configuration and usage examples         |
-| `:NoxModusPalette`     | Show color palette (alias for `:NoxModusInfo`)        |
-| `:NoxModusConfig`      | Show configuration (alias for `:NoxModusInfo config`) |
+| Command            | Description                                           |
+| ------------------ | ----------------------------------------------------- |
+| `:NoxModusInfo`    | Show color palette information                        |
+| `:NoxModusPalette` | Show color palette (alias for `:NoxModusInfo`)        |
+| `:NoxModusConfig`  | Show configuration (alias for `:NoxModusInfo config`) |
 
 > **Tip**: Press `q` or `<Esc>` to close the info windows
 
@@ -179,16 +178,17 @@ nox-modus includes dedicated support for:
 To add support for a new plugin:
 
 1. **Create integration file**: `lua/nox-modus/integrations/my-plugin.lua`
+
    ```lua
    local M = {}
-   
+
    function M.highlight(palette)
      return {
        MyPluginHighlight = { fg = palette.base, bg = palette.bg },
        -- Add more highlights...
      }
    end
-   
+
    return M
    ```
 
