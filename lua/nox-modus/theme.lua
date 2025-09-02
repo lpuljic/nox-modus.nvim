@@ -14,6 +14,7 @@ local function get_integrations()
     "nox-modus.integrations.none-ls",
     "nox-modus.integrations.markdown",
     "nox-modus.integrations.nvim-cmp",
+    "nox-modus.integrations.blink-cmp",
     "nox-modus.integrations.nvim-tree",
     "nox-modus.integrations.vim-fugitive",
     "nox-modus.integrations.nvim-telescope",
