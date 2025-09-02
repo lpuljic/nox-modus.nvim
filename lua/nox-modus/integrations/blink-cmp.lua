@@ -15,10 +15,10 @@ local M = {}
 
 function M.highlight(c)
   return {
-    BlinkCmpKindText = { fg = c.red }
-    BlinkCmpMenu = { fg = c.red, bg = c.red },
-    BlinkCmpMenuBorder = { fg = c.red },
+    BlinkCmpMenu = { link = "Pmenu" },
+    BlinkCmpMenuBorder = { fg = c.gravel },
     BlinkCmpLabelMatch = { fg = c.sunglow },
+    BlinkCmpKind = { fg = c.grey_chateau },
   }
 end
 
