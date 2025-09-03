@@ -1,162 +1,222 @@
 <div align="center">
 
-#![logo]()
-logo here
+# nox-modus.nvim
 
-</div>
+_A sophisticated monotone dark theme for Neovim_
 
----
-
-<div align="center"><p>
-    <a href="https://github.com/lpuljic/nox-modus.nvim/pulse">
-      <img alt="Last commit" src="https://img.shields.io/github/last-commit/lpuljic/nox-modus.nvim?style=for-the-badge&logo=starship&color=98c379&logoColor=D9E0EE&labelColor=302D41"/>
-    </a>
-    <a href="https://github.com/lpuljic/nox-modus.nvim/stargazers">
-      <img alt="Stars" src="https://img.shields.io/github/stars/lpuljic/nox-modus.nvim?style=for-the-badge&logo=starship&color=c678dd&logoColor=D9E0EE&labelColor=302D41" />
-    </a>
-</div>
+[![Last commit](https://img.shields.io/github/last-commit/lpuljic/nox-modus.nvim?style=for-the-badge&logo=starship&color=88afa2&logoColor=e4e4e4&labelColor=232323)](https://github.com/lpuljic/nox-modus.nvim/pulse)
+[![Stars](https://img.shields.io/github/stars/lpuljic/nox-modus.nvim?style=for-the-badge&logo=starship&color=569cd6&logoColor=e4e4e4&labelColor=232323)](https://github.com/lpuljic/nox-modus.nvim/stargazers)
 
 ![Preview](./image/nox-modus.png)
 
-# nox-modus
+</div>
 
-nox-modus is inspired monotone theme, hence the name `nox` `modus`, meaning `night mode` in Latin.
+**nox-modus** is an inspired monotone theme with carefully selected accent colors. The name derives from Latin _"nox modus"_ meaning _"night mode"_, reflecting its dark, elegant aesthetic designed for extended coding sessions.
 
 <details>
 <summary><h2>🎨 Palette</h2></summary>
 
-<div style="display: flex; gap: 10px;">
-
-  <table style="border-collapse: collapse; border: none;">
-    <tbody>
-      <tr>
-        <td style="border: none;">bg</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/111111/111111.png" alt="#111111"> #111111</td>
-      </tr>
-      <tr>
-        <td style="border: none;">base</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/e4e4e4/e4e4e4.png" alt="#e4e4e4"> #e4e4e4</td>
-      </tr>
-      <tr>
-        <td style="border: none;">dawn</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/a0a0a0/a0a0a0.png" alt="#a0a0a0"> #a0a0a0</td>
-      </tr>
-      <tr>
-        <td style="border: none;">cascade</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/88afa2/88afa2.png" alt="#88afa2"> #88afa2</td>
-      </tr>
-      <tr>
-        <td style="border: none;">monsoon</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/719597/719597.png" alt="#719597"> #719597</td>
-      </tr>
-      <tr>
-        <td style="border: none;">olivine</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/97BC62/97BC62.png" alt="#97BC62"> #97BC62</td>
-      </tr>
-      <tr>
-        <td style="border: none;">aluminium</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/ababaf/ababaf.png" alt="#ababaf"> #ababaf</td>
-      </tr>
-      <tr>
-        <td style="border: none;">gun_powder</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/415062/415062.png" alt="#415062"> #415062</td>
-      </tr>
-      <tr>
-        <td style="border: none;">grey_chateau</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/96a6c8/96a6c8.png" alt="#96a6c8"> #96a6c8</td>
-      </tr>
-      <tr>
-        <td style="border: none;">gray1</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/494949/494949.png" alt="#494949"> #494949</td>
-      </tr>
-      <tr>
-        <td style="border: none;">gray2</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/666666/666666.png" alt="#666666"> #666666</td>
-      </tr>
-      <tr>
-        <td style="border: none;">gray3</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/b6b6b5/b6b6b5.png" alt="#b6b6b5"> #b6b6b5</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table style="border-collapse: collapse; border: none;">
-    <tbody>
-      <tr>
-        <td style="border: none;">gray4</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/8c8c8c/8c8c8c.png" alt="#8c8c8c"> #8c8c8c</td>
-      </tr>
-      <tr>
-        <td style="border: none;">zeus</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/e67300/e67300.png" alt="#e67300"> #e67300</td>
-      </tr>
-      <tr>
-        <td style="border: none;">blue</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/569CD6/569CD6.png" alt="#569CD6"> #569CD6</td>
-      </tr>
-      <tr>
-        <td style="border: none;">purple</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/B180D7/B180D7.png" alt="#B180D7"> #B180D7</td>
-      </tr>
-      <tr>
-        <td style="border: none;">red</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/da3633/da3633.png" alt="#da3633"> #da3633</td>
-      </tr>
-      <tr>
-        <td style="border: none;">mocha</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/A47663/A47663.png" alt="#A47663"> #A47663</td>
-      </tr>
-      <tr>
-        <td style="border: none;">orange</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/C5630C/C5630C.png" alt="#C5630C"> #C5630C</td>
-      </tr>
-      <tr>
-        <td style="border: none;">yellow</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/FAC03B/FAC03B.png" alt="#FAC03B"> #FAC03B</td>
-      </tr>
-      <tr>
-        <td style="border: none;">DiffAdd</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/294842/294842.png" alt="#294842"> #294842</td>
-      </tr>
-      <tr>
-        <td style="border: none;">DiffDelete</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/6a2835/6a2835.png" alt="#6a2835"> #6a2835</td>
-      </tr>
-      <tr>
-        <td style="border: none;">DiffText</td>
-        <td style="border: none;"><img src="https://placehold.co/35x35/9a6f43/9a6f43.png" alt="#9a6f43"> #9a6f43</td>
-      </tr>
-    </tbody>
-  </table>
-
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Hex</th>
+      <th>Color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>bg</strong></td><td><code>#111111</code></td><td style="background:#111111;width:60px;"></td></tr>
+    <tr><td><strong>base</strong></td><td><code>#e4e4e4</code></td><td style="background:#e4e4e4;width:60px;"></td></tr>
+    <tr><td><strong>dark</strong></td><td><code>#151515</code></td><td style="background:#151515;width:60px;"></td></tr>
+    <tr><td><strong>dawn</strong></td><td><code>#a0a0a0</code></td><td style="background:#a0a0a0;width:60px;"></td></tr>
+    <tr><td><strong>ash_grey</strong></td><td><code>#b6b6b5</code></td><td style="background:#b6b6b5;width:60px;"></td></tr>
+    <tr><td><strong>gravel</strong></td><td><code>#494949</code></td><td style="background:#494949;width:60px;"></td></tr>
+    <tr><td><strong>warm_grey</strong></td><td><code>#8c8c8c</code></td><td style="background:#8c8c8c;width:60px;"></td></tr>
+    <tr><td><strong>storm_dust</strong></td><td><code>#666666</code></td><td style="background:#666666;width:60px;"></td></tr>
+    <tr><td><strong>cascade</strong></td><td><code>#88afa2</code></td><td style="background:#88afa2;width:60px;"></td></tr>
+    <tr><td><strong>monsoon</strong></td><td><code>#719597</code></td><td style="background:#719597;width:60px;"></td></tr>
+    <tr><td><strong>olivine</strong></td><td><code>#97bc62</code></td><td style="background:#97bc62;width:60px;"></td></tr>
+    <tr><td><strong>aluminium</strong></td><td><code>#ababaf</code></td><td style="background:#ababaf;width:60px;"></td></tr>
+    <tr><td><strong>gun_powder</strong></td><td><code>#415062</code></td><td style="background:#415062;width:60px;"></td></tr>
+    <tr><td><strong>grey_chateau</strong></td><td><code>#96a6c8</code></td><td style="background:#96a6c8;width:60px;"></td></tr>
+    <tr><td><strong>zeus</strong></td><td><code>#232323</code></td><td style="background:#232323;width:60px;"></td></tr>
+    <tr><td><strong>celestial_blue</strong></td><td><code>#569cd6</code></td><td style="background:#569cd6;width:60px;"></td></tr>
+    <tr><td><strong>purple</strong></td><td><code>#b180d7</code></td><td style="background:#b180d7;width:60px;"></td></tr>
+    <tr><td><strong>red</strong></td><td><code>#da3633</code></td><td style="background:#da3633;width:60px;"></td></tr>
+    <tr><td><strong>mocha</strong></td><td><code>#a47663</code></td><td style="background:#a47663;width:60px;"></td></tr>
+    <tr><td><strong>orange</strong></td><td><code>#f3701e</code></td><td style="background:#f3701e;width:60px;"></td></tr>
+    <tr><td><strong>sunglow</strong></td><td><code>#fac03b</code></td><td style="background:#fac03b;width:60px;"></td></tr>
+    <tr><td><strong>golden_glow</strong></td><td><code>#fce094</code></td><td style="background:#fce094;width:60px;"></td></tr>
+    <tr><td><strong>git.DiffAdd</strong></td><td><code>#294841</code></td><td style="background:#294841;width:60px;"></td></tr>
+    <tr><td><strong>git.DiffDelete</strong></td><td><code>#6a2835</code></td><td style="background:#6a2835;width:60px;"></td></tr>
+    <tr><td><strong>git.DiffChange</strong></td><td><code>#49423c</code></td><td style="background:#49423c;width:60px;"></td></tr>
+    <tr><td><strong>git.DiffText</strong></td><td><code>#c5630c</code></td><td style="background:#c5630c;width:60px;"></td></tr>
+    <tr><td><strong>diagnostics.DiagnosticError</strong></td><td><code>#be7c7d</code></td><td style="background:#be7c7d;width:60px;"></td></tr>
+    <tr><td><strong>diagnostics.DiagnosticWarn</strong></td><td><code>#aa8a69</code></td><td style="background:#aa8a69;width:60px;"></td></tr>
+  </tbody>
+</table>
 
 </details>
 
-## Install
+## 📦 Installation
 
-[packer](https://github.com/wbthomason/packer.nvim)
+### [lazy.nvim](https://github.com/folke/lazy.nvim) (recommended)
 
 ```lua
-use "lpuljic/nox-modus.nvim"
+{
+  "lpuljic/nox-modus.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    vim.cmd.colorscheme("nox-modus")
+  end,
+}
 ```
 
-[vim-plug](https://github.com/junegunn/vim-plug)
+### [packer.nvim](https://github.com/wbthomason/packer.nvim)
+
+```lua
+use {
+  "lpuljic/nox-modus.nvim",
+  config = function()
+    vim.cmd.colorscheme("nox-modus")
+  end
+}
+```
+
+### [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
 Plug 'lpuljic/nox-modus.nvim'
 ```
 
-[lazy](https://github.com/folke/lazy.nvim)
+### Manual
 
-```lua
-{ "lpuljic/nox-modus.nvim" }
+```bash
+git clone https://github.com/lpuljic/nox-modus.nvim ~/.local/share/nvim/site/pack/plugins/start/nox-modus.nvim
 ```
 
-## Configuration
+## ⚙️ Configuration
 
-Add this somewhere in your configuration.
+### Basic Usage
 
 ```lua
 vim.cmd.colorscheme("nox-modus")
 ```
+
+### Advanced Configuration
+
+You can pass options to the theme setup function for more control:
+
+```lua
+require("nox-modus").setup({
+  clear_semantic_highlights = false,
+  palette_override = {
+    bg = "#000000",
+    red = "#ff0000"
+  }
+})
+```
+
+#### Configuration Options
+
+| Option                      | Type      | Default | Description                             |
+| --------------------------- | --------- | ------- | --------------------------------------- |
+| `clear_semantic_highlights` | `boolean` | `true`  | Clear semantic highlights from LSP      |
+| `palette_override`          | `table`   | `{}`    | Override specific colors in the palette |
+
+#### 🔧 Extended API
+
+```lua
+-- Reload theme with current configuration
+require("nox-modus").reload()
+
+-- Extend palette at runtime
+require("nox-modus").extend_palette({ bg = "#000000" })
+
+-- Get current palette for inspection
+local palette = require("nox-modus").get_palette()
+
+-- Get current configuration
+local config = require("nox-modus").get_config()
+```
+
+#### 💬 Built-in Commands
+
+| Command            | Description                                           |
+| ------------------ | ----------------------------------------------------- |
+| `:NoxModusInfo`    | Show color palette information                        |
+| `:NoxModusPalette` | Show color palette (alias for `:NoxModusInfo`)        |
+| `:NoxModusConfig`  | Show configuration (alias for `:NoxModusInfo config`) |
+
+> **Tip**: Press `q` or `<Esc>` to close the info windows
+
+## ✨ Features
+
+- 🎨 **Sophisticated Color Palette** - Carefully crafted monotone design with strategic accent colors
+- 🔧 **Comprehensive Plugin Support** - Integrations for LSP, Treesitter, Telescope, nvim-cmp, and more
+- ⚡ **Performance Optimized** - Batched highlight application for fast loading
+- 🎛️ **Highly Customizable** - Runtime palette modification with simple API
+- 🖥️ **Terminal Support** - Full 16-color terminal integration for `:terminal`
+- 🔍 **Built-in Inspection** - Commands to explore palette and configuration
+- 🛡️ **Robust Error Handling** - Graceful fallbacks for missing plugins
+- 📦 **Zero Dependencies** - Lightweight and self-contained
+
+## 🔌 Plugin Integrations
+
+nox-modus includes dedicated support for:
+
+- **LSP**: nvim-lspconfig, diagnostics, semantic tokens
+- **Syntax**: nvim-treesitter, markdown, YAML, vimdoc
+- **Git**: gitsigns, vim-fugitive, diff highlighting
+- **UI**: nvim-cmp, nvim-tree, telescope.nvim
+- **Status**: lualine.nvim theme included
+- **Linting**: none-ls (null-ls) support
+
+### 🛠️ Adding Custom Integrations
+
+To add support for a new plugin:
+
+1. **Create integration file**: `lua/nox-modus/integrations/my-plugin.lua`
+
+   ```lua
+   local M = {}
+
+   function M.highlight(palette)
+     return {
+       MyPluginHighlight = { fg = palette.base, bg = palette.bg },
+       -- Add more highlights...
+     }
+   end
+
+   return M
+   ```
+
+2. **Register in theme.lua**: Add to the `integration_modules` list
+   ```lua
+   local integration_modules = {
+     "nox-modus.core.base",
+     -- ... existing integrations ...
+     "nox-modus.integrations.my-plugin",  -- Add your integration here
+   }
+   ```
+
+All integrations are loaded unconditionally - if the target plugin isn't installed, the highlight groups simply won't be used.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit issues and pull requests.
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+---
+
+<div align="center">
+
+_Built with ❤️ for the Neovim community_
+
+**[⭐ Star this repo](https://github.com/lpuljic/nox-modus.nvim) • [🐛 Report issues](https://github.com/lpuljic/nox-modus.nvim/issues) • [💡 Request features](https://github.com/lpuljic/nox-modus.nvim/issues/new)**
+
+</div>

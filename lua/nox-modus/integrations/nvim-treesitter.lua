@@ -28,7 +28,7 @@ function M.highlight(c)
 		["@string.documentation"] = { link = "String" },
 		["@string.regex"] = { link = "Constant" },
 		["@string.escape"] = { link = "Constant" },
-		["@string.special"] = { link = "Contstant" },
+		["@string.special"] = { link = "Constant" },
 		--		["@string.yaml"] = { fg = c.base }, -- Not sure why I did this, this will change yaml value colour. e.g    targetRevision: main (main is string colour)
 
 		-- Types
@@ -39,7 +39,7 @@ function M.highlight(c)
 		["@function"] = { link = "Function" },
 		["@function.builtin"] = { link = "Function" },
 		["@function.method.call"] = { fg = c.cascade, italic = true },
-		["@function.macro"] = { link = "macro" },
+		["@function.macro"] = { link = "Macro" },
 		["@constructor"] = { link = "Function" },
 		["@method"] = { link = "Function" },
 		["@parameter"] = { link = "Identifier" },
