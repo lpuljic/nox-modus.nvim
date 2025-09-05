@@ -49,7 +49,7 @@ function M.highlight(c)
     Pmenu = { fg = c.base, bg = c.bg },                                    -- Popup menu: normal item.
     PmenuSel = { fg = c.base, bg = util.blend(c.bg, c.storm_dust, 0.55) }, -- Popup menu: selected item.
     PmenuSbar = { fg = c.base, bg = c.gravel },                            -- Popup menu: scrollbar.
-    PmenuThumb = { fg = c.base, bg = c.ash_grey },                         -- Popup menu: Thumb of the scrollbar.
+    PmenuThumb = { bg = c.gravel },                                        -- Popup menu: Thumb of the scrollbar.
     PmenuKind = { fg = c.grey_chateau },                                   -- Kind icon/text of the completion item
     DiffText = { fg = c.base, bg = c.git.DiffText },                       -- diff mode: Changed text within a changed line |diff.txt|
     DiffAdd = { fg = c.base, bg = c.git.DiffAdd },                         -- diff mode: Added line |diff.txt|
