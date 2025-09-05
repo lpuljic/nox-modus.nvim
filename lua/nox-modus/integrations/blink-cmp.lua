@@ -19,6 +19,8 @@ function M.highlight(c)
     BlinkCmpMenuBorder = { fg = c.gravel },
     BlinkCmpLabelMatch = { fg = c.sunglow },
     BlinkCmpKind = { fg = c.grey_chateau },
+    BlinkCmpDocBorder = { fg = c.gravel, bg = c.bg },
+    BlinkCmpDoc = { fg = c.base },
   }
 end
 

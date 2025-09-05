@@ -59,7 +59,7 @@ function M.highlight(c)
     Folded = { fg = c.storm_dust },                                        -- line used for closed folds
     FoldColumn = { fg = c.dawn },                                          -- 'foldcolumn'
     Whitespace = { fg = c.base },                                          -- "nbsp", "space", "tab" and "trail" in 'listchars'
-    NormalFloat = { fg = "NONE" },                                         -- Normal text in floating windows.
+    NormalFloat = { fg = c.gravel, bg = c.bg },                            -- Normal text in floating windows.
     FloatBorder = { fg = c.gravel, bg = c.bg },
     QuickFixLine = { bg = c.gravel },                                      -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
     qfFileName = { fg = c.base },
