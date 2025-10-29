@@ -23,6 +23,8 @@ local function get_integrations()
     "nox-modus.integrations.semantic_tokens",
     "nox-modus.integrations.yaml",
     "nox-modus.integrations.vimdoc",
+    "nox-modus.integrations.extmarks",
+
     -- Add new integrations here:
     -- "nox-modus.integrations.my-plugin",
   }
