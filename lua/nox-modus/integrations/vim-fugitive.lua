@@ -16,6 +16,7 @@ local M = {}
 function M.highlight(c)
   return {
     -- tpope/vim-fugitive
+    -- https://github.com/vim/vim/blob/master/runtime/syntax/gitcommit.vim
     fugitiveHeading = { fg = c.grey_chateau },
     fugitiveCount = { fg = c.sunglow },
     fugitiveHash = { link = "Label" },

@@ -19,9 +19,9 @@ function M.highlight(c)
     SignAdd = { fg = c.olivine },
     SignChange = { fg = c.orange },
     SignDelete = { fg = c.red },
-    GitSignsAdd = { fg = c.olivine }, -- diff mode: Added line |diff.txt|
+    GitSignsAdd = { fg = c.olivine },   -- diff mode: Added line |diff.txt|
     GitSignsChange = { fg = c.orange }, -- diff mode: Changed line |diff.txt|
-    GitSignsDelete = { fg = c.red },  -- diff mode: Deleted line |diff.txt|
+    GitSignsDelete = { fg = c.red },    -- diff mode: Deleted line |diff.txt|
   }
 end
 
