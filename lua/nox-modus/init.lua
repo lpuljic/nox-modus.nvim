@@ -2,11 +2,7 @@ local theme = require("nox-modus.theme")
 
 local M = {}
 
--- Function to load the theme and apply the setup
-function M.load()
-  theme.setup() -- Actually call the setup function
-end
-
+-- Main setup function: initializes theme, applies highlights, and sets up autocommands
 M.setup = theme.setup
 
 return M

@@ -120,9 +120,6 @@ function M.setup(opts)
       M.reload()
     end,
   })
-
-  -- Setup commands
-  require("nox-modus.commands").setup()
 end
 
 -- Reload theme without changing configuration

@@ -1,1 +1,3 @@
-require("nox-modus").load()
+-- Colorscheme entry point
+-- Called automatically when `:colorscheme nox-modus` is executed
+require("nox-modus").setup()
