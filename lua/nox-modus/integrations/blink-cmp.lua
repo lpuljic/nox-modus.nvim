@@ -1,26 +1,27 @@
 local M = {}
---Style Options:
---
---    o: standout
---    u: underline
---    c: undercurl
---    d: underdouble
---    t: underdotted
---    h: underdashed
---    s: strikethrough
---    i: italic
---    b: bold
---    r: reverse
---    n: nocombine
+-- Style Options:
+-- underline = true,
+-- undercurl = true,
+-- strikethrough = true,
+-- italic = true,
+-- bold = true,
+-- underdouble
+-- underdotted
+-- underdashed
 
 function M.highlight(c)
   return {
-    BlinkCmpMenu = { link = "Pmenu" },
-    BlinkCmpMenuBorder = { fg = c.gravel },
-    BlinkCmpLabelMatch = { fg = c.sunglow },
-    BlinkCmpKind = { fg = c.grey_chateau },
-    BlinkCmpDocBorder = { fg = c.gravel, bg = c.bg },
-    BlinkCmpDoc = { fg = c.base },
+    BlinkCmpDocBorder           = { fg = c.gravel },          -- border for completion documentation
+    BlinkCmpMenu                = { link = "Pmenu" },         -- menu for completion items
+    BlinkCmpMenuBorder          = { fg = c.gravel },          -- border for completion menu
+    BlinkCmpLabelMatch          = { fg = c.sunglow },         -- matched label in completion items
+    BlinkCmpKind                = { fg = c.grey_chateau },    -- kind of completion item
+    BlinkCmpDoc                 = { fg = c.dawn },
+    BlinkCmpSignatureHelpBorder = { fg = c.gravel },          -- border for signature help
+    BlinkCmpLabelDeprecated     = { strikethrough = true },   -- deprecated label in completion
+
+    BlinkCmpGhostText           = { fg = c.red },             -- ghost text in completion
+    BlinkCmpLabel               = { fg = c.purple },          -- label for completion items
   }
 end
 

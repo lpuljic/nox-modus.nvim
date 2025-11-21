@@ -14,16 +14,8 @@ function util.apply(groups)
   end
 end
 
--- Legacy function for backwards compatibility
-function util.initialise(group)
-  util.apply(group)
-end
-
 -- Normalize hex color to lowercase
 function util.normalize_hex(hex)
-  if type(hex) ~= "string" then
-    return hex
-  end
   return hex:lower()
 end
 
@@ -53,24 +45,27 @@ end
 ---@param alpha number: A blending factor, between `0` and `1`.
 ---@return string hex: A blended hex color code of the format `#rrggbb`
 function util.blend(fg, bg, alpha)
-  -- Clamp alpha between 0 and 1
+  -- Validate and clamp alpha
   alpha = math.max(0, math.min(1, alpha))
   if alpha == 0 then return fg end
   if alpha == 1 then return bg end
 
+  -- Convert hex colors to RGB
   local bg_rgb = hexToRgb(bg)
   local fg_rgb = hexToRgb(fg)
   if not bg_rgb or not fg_rgb then
     return fg -- fallback to fg if invalid color
   end
 
-  local blendChannel = function(i)
+  -- Blend each RGB channel
+  local blended = {}
+  for i = 1, 3 do
     local ret = ((1 - alpha) * fg_rgb[i] + (alpha * bg_rgb[i]))
-    return math.floor(math.min(math.max(0, ret), 255) + 0.5)
+    blended[i] = math.floor(math.min(math.max(0, ret), 255) + 0.5)
   end
 
-  -- Output lowercase hex for consistency
-  return string.format("#%02x%02x%02x", blendChannel(1), blendChannel(2), blendChannel(3))
+  -- Convert back to hex
+  return string.format("#%02x%02x%02x", blended[1], blended[2], blended[3])
 end
 
 -- Clear semantic highlights with caching
