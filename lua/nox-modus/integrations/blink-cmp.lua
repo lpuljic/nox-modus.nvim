@@ -21,7 +21,6 @@ function M.highlight(c)
     BlinkCmpLabelDeprecated     = { strikethrough = true },   -- deprecated label in completion
 
     BlinkCmpGhostText           = { fg = c.red },             -- ghost text in completion
-    BlinkCmpLabel               = { fg = c.purple },          -- label for completion items
   }
 end
 
