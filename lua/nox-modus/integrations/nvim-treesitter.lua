@@ -28,7 +28,6 @@ function M.highlight(c)
     ["@string.regex"] = { link = "Constant" },
     ["@string.escape"] = { link = "Constant" },
     ["@string.special"] = { link = "Constant" },
-    --		["@string.yaml"] = { fg = c.base }, -- Not sure why I did this, this will change yaml value colour. e.g    targetRevision: main (main is string colour)
 
     -- Types
     ["@property"] = { link = "Property" },
@@ -52,16 +51,18 @@ function M.highlight(c)
     ["@comment.note"] = { fg = c.celestial_blue },
 
     -- Markup
-    ["@markup.quote.markdown"] = { link = "RenderMarkdownQuote" },
-    ["@markup.raw"] = { fg = c.grey_chateau },
-    ["@markup.link"] = { fg = c.grey_chateau },
-    ["@markup.heading.1.markdown"] = { link = "markdownH1" },
-    ["@markup.heading.2.markdown"] = { link = "markdownH2" },
-    ["@markup.heading.3.markdown"] = { link = "markdownH3" },
+    ["@markup"] = { fg = c.base }, -- text clour for markup languages
+    ["@markup.heading"] = { link = "Keyword" },
+    ["@markup.italic"] = { fg = c.base, italic = true },
+    ["@markup.link"] = { fg = c.string },
+    ["@markup.link.uri"] = { fg = c.string, underline = true },
+    ["@markup.raw"] = { link = "Constant"},
+    ["@markup.quote.markdown"] = { link = "Comment" },
+    ["@markup.math"] = { link = "String" },
     ["@markup.strong"] = { fg = c.base, bold = true },
-    ["@_label.markdown_inline"] = { link = "Label" },
-    ["@markup.strikethrough"] = { fg = c.dawn, strikethrough = true },
+    ["@markup.strikethrough"] = { fg = c.warm_grey, strikethrough = true },
+    ["@markup.underline"] = { fg = c.base, underline = true },
+    ["@markup.list"] = { link = "Function" },
   }
 end
-
 return M
