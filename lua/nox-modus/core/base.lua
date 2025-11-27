@@ -29,14 +29,14 @@ function M.highlight(c)
     WinSeparator = { fg = c.gravel },                                      -- Colour vertically split line (See :h 'fillchars'.,
     LineNr = { fg = c.gravel },                                            -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr = { fg = c.sunglow, bg = c.bg },                          -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
-    CursorLine = { bg = c.zeus },                                          -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg, is not set.
+    CursorLine = { bg = c.zeus },                                          -- Screen-line at the cursor, when 'cursorline' is set.
     SignColumn = { bg = c.bg },                                            -- column where |signs| are displayed
     ColorColumn = { bg = c.zeus },                                         -- used for the columns set with 'colorcolumn'
     CursorColumn = { bg = c.gravel },                                      -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    SpellBad = { fg = c.red, undercurl = true },                           -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
-    SpellCap = { fg = c.sunglow, undercurl = true },                       -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
-    SpellLocal = { fg = c.celestial_blue, undercurl = true },              -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
-    SpellRare = { fg = c.celestial_blue, undercurl = true },               -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
+    SpellBad = { undercurl = true },                                       -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
+    SpellCap = { undercurl = true },                                       -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
+    SpellLocal = { undercurl = true },                                     -- Word that is recognized by the spellchecker as one that is used in another region.
+    SpellRare = { undercurl = true },                                      -- Word that is recognized by the spellchecker as one that is hardly ever used.
     ErrorMsg = { fg = c.red, bg = c.bg, bold = true },                     -- error messages on the command line
     WarningMsg = { fg = c.orange, bg = c.bg },                             -- warning messages
     ModeMsg = { fg = c.base, bg = c.bg },
