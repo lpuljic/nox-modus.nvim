@@ -82,7 +82,7 @@ function M.highlight(c)
     Title = { fg = c.warm_grey, bold = true },                             -- titles for output from ":set all", ":autocmd" etc.
     String = { fg = c.cascade },                                           -- a string constant: "this is a string"
     Character = { fg = c.ash_grey },                                       -- a character constant: 'c', '\n'
-    Number = { fg = c.dawn },                                              -- a number constant: 234, 0xff
+    Number = { fg = c.warm_grey },                                              -- a number constant: 234, 0xff
     Float = { link = "Number" },                                           -- a floating point constant: 2.3e10
     Boolean = { fg = c.grey_chateau },                                     -- a boolean constant: TRUE, false
     Constant = { fg = c.cascade },                                         -- (preferred, any constant
