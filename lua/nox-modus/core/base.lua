@@ -64,7 +64,7 @@ function M.highlight(c)
     QuickFixLine = { bg = c.gravel },                                      -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
     qfFileName = { fg = c.base },
     qfLineNr = { fg = c.sunglow },
-    MatchParen = { fg = c.orange },                                        -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+    MatchParen = { fg = c.orange, bg = util.blend(c.bg, c.orange, 0.20) }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     lCursor = { fg = c.gun_powder, bg = c.aluminium },                     -- the character under the cursor when |language-mapping| is used (see 'guicursor',
     CursorIM = { fg = c.gun_powder, bg = c.aluminium },                    -- like Cursor, but used when in IME mode |CursorIM|
     TermCursor = { fg = c.gun_powder, bg = c.aluminium },                  -- cursor in a focused terminal
