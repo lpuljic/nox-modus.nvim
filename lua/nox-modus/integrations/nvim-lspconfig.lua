@@ -39,7 +39,7 @@ function M.highlight(c)
     LspReferenceText = { bg = c.gravel },  -- used for highlighting "text" references
     LspReferenceRead = { bg = c.gravel },  -- used for highlighting "read" references
     LspReferenceWrite = { bg = c.gravel }, -- used for highlighting "write" references
-    LspInlayHint = { fg = c.red, italic = true },
+    LspInlayHint = { fg = c.gravel, italic = true },
   }
 end
 
